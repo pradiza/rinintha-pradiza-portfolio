@@ -135,6 +135,10 @@ export const featuredProjects: FeaturedProject[] = [
     role: "Marketing Communication Strategist",
     summary:
       "Owned Cecilia’s marketing direction, programs, and six-person team, linking brand positioning and audience activity with commercial performance.",
+    image: "/images/cecilia-holywings.jpg",
+    imageAlt: "Cecilia at Holywings Group, showing the venue's main bar and performance stage",
+    imageWidth: 2400,
+    imageHeight: 1600,
     tone: "ink",
     stats: [
       { value: "Rp2.1B+", label: "monthly revenue surpassed" },
@@ -150,9 +154,13 @@ export const featuredProjects: FeaturedProject[] = [
     role: "Creative & Delivery Lead",
     summary:
       "Led creative and production delivery for a four-city Shiseido experiential roadshow across Indonesia.",
+    image: "/images/shiseido-prisia-nasution.png",
+    imageAlt: "Shiseido Beauty Redefined with brand ambassador Prisia Nasution",
+    imageWidth: 700,
+    imageHeight: 519,
     tone: "coral",
     stats: [
-      { value: "4", label: "Indonesian cities" },
+      { value: "4", label: "Indonesian cities · Jakarta · Surabaya · Medan · Bandung" },
       { value: "2017–18", label: "roadshow period" },
     ],
   },
@@ -161,10 +169,14 @@ export const featuredProjects: FeaturedProject[] = [
     id: "side-tokyo",
     title: "SIDE Co. / Tokyo Fashion Week Projects",
     year: "2017",
-    category: "Fashion · Tokyo · Cross-border delivery",
+    category: "Amazon Fashion Week TOKYO · Fashion Hong Kong 2018 S/S",
     role: "Project Manager (based in Tokyo)",
     summary:
       "Managed fashion-week, exhibition, and retail projects while based in Tokyo, coordinating designers, venues, logistics, pop-ups, and VIP events.",
+    image: "/images/fashion-hong-kong-2018ss.png",
+    imageAlt: "Fashion Hong Kong 2018 S/S runway at Amazon Fashion Week TOKYO",
+    imageWidth: 900,
+    imageHeight: 600,
     tone: "soft",
     stats: [
       { value: "Tokyo", label: "based in market" },

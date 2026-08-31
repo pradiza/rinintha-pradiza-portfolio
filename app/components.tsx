@@ -2,21 +2,11 @@
 import Image from "next/image";
 import type { FeaturedProject } from "./site-data";
 import { email, socials } from "./site-data";
-
-export function SiteNav() {
-  return (
-    <nav className="nav" aria-label="Primary navigation">
-      <a className="brand" href="/" aria-label="Rinintha Pradiza, home">RP<span>.</span></a>
-      <div className="navLinks">
-        <a href="/">Home</a><a href="/profile">Profile</a><a href="/media">Media &amp; Press</a><a href="/work">Selected Work</a><a href="/services">Services</a><a href="/consultation">Consultation</a>
-        <a className="navCta" href="/contact">Let&apos;s talk ↗</a>
-      </div>
-    </nav>
-  );
-}
+import { ScrollReveal } from "./scroll-reveal";
+import { SiteNav } from "./site-nav";
 
 export function PageShell({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <main><a className="skipLink" href="#content">Skip to content</a><SiteNav /><div id="content">{children}</div></main>;
+  return <main><a className="skipLink" href="#content">Skip to content</a><SiteNav /><ScrollReveal /><div id="content">{children}</div></main>;
 }
 
 export function SiteFooter() {
@@ -52,7 +42,7 @@ export function ProjectCard({ project }: Readonly<{ project: FeaturedProject }>)
   const headlineStat = project.stats?.slice(0, 1);
 
   return (
-    <article className={`projectCard tone-${project.tone}`}>
+    <article className={`projectCard project-${project.id} tone-${project.tone}`}>
       {project.image ? <div className="projectImage"><Image src={project.image} alt={project.imageAlt ?? ""} width={project.imageWidth ?? 1200} height={project.imageHeight ?? 800} sizes="(max-width: 820px) 100vw, 50vw" /></div> : <div className="projectNumberVisual" aria-label="Project scale">{headlineStat?.map((stat) => <div key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div>}
       <div className="projectCardCopy">
         <div className="projectTopline"><span>{project.no}</span><span>{project.category}</span><span>{project.year}</span></div>

@@ -35,6 +35,14 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .navLinks > a:not(.navCta):hover { border-color: currentColor; }
 .navCta { border: 1px solid var(--ink); border-radius: 999px; padding: 12px 18px; transition: 0.2s; }
 .navCta:hover { background: var(--ink); color: var(--paper); }
+.menuToggle { display: none; width: 46px; height: 46px; padding: 11px 9px; border: 1px solid var(--ink); border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; }
+.menuToggle span { display: block; width: 100%; height: 1.5px; margin: 5px 0; background: currentColor; transition: transform 0.25s ease, opacity 0.2s ease; }
+.nav[data-menu-open="true"] .menuToggle span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav[data-menu-open="true"] .menuToggle span:nth-child(2) { opacity: 0; }
+.nav[data-menu-open="true"] .menuToggle span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+.motionReady .revealItem { opacity: 0; transform: translateY(30px); transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1); transition-delay: var(--reveal-delay, 0ms); }
+.motionReady .revealItem.isVisible { opacity: 1; transform: translateY(0); }
 
 .hero { min-height: calc(100svh - 88px); padding: 34px 4vw 0; overflow: hidden; }
 .eyebrow { display: flex; justify-content: space-between; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; }
@@ -71,6 +79,15 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .projectImage { min-height: 0; overflow: hidden; }
 .projectImage img { transition: transform 0.7s ease; }
 .projectCard:hover .projectImage img { transform: scale(1.03); }
+.project-nila-baharuddin .projectImage img,
+#nila-baharuddin .workStoryVisual img,
+.project-cecilia .projectImage img,
+#cecilia .workStoryVisual img { object-position: center top; }
+.project-shiseido .projectImage img,
+#shiseido .workStoryVisual img { object-position: center 30%; transform: rotate(-0.65deg) scale(1.045); }
+.project-shiseido:hover .projectImage img { transform: rotate(-0.65deg) scale(1.075); }
+.project-side-tokyo .projectImage img,
+#side-tokyo .workStoryVisual img { object-position: center top; }
 .projectCardCopy { padding: 35px; display: flex; flex-direction: column; align-items: flex-start; }
 .projectTopline { width: 100%; display: grid; grid-template-columns: 40px 1fr auto; gap: 12px; margin-bottom: 24px; font-size: 9px; line-height: 1.4; letter-spacing: 0.12em; text-transform: uppercase; }
 .projectCard h3 { max-width: 860px; margin: 0 0 15px; font-size: clamp(47px, 5.5vw, 86px); letter-spacing: -0.065em; line-height: 0.88; }
@@ -313,14 +330,16 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 }
 
 @media (max-width: 640px) {
-  .nav { height: auto; min-height: 104px; flex-wrap: wrap; gap: 8px; padding: 10px 3vw; }
-  .brand { font-size: 22px; }
-  .navLinks { width: 100%; flex: 0 0 100%; gap: 16px; margin-left: 0; overflow-x: auto; padding-bottom: 3px; font-size: 9px; letter-spacing: 0.04em; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-  .navLinks::-webkit-scrollbar { display: none; }
-  .navLinks a { flex: 0 0 auto; }
-  .navLinks a:not(.navCta) { display: block; }
-  .navCta { padding: 8px 7px; }
-  .hero { min-height: calc(100svh - 104px); padding-top: 23px; }
+  body.menuOpen { overflow: hidden; }
+  .nav { height: 72px; min-height: 72px; flex-wrap: nowrap; padding: 0 4vw; }
+  .brand { position: relative; z-index: 2; font-size: 25px; }
+  .menuToggle { display: block; position: relative; z-index: 2; }
+  .navLinks { position: fixed; inset: 72px 0 0; width: auto; min-height: calc(100dvh - 72px); padding: 26px 4vw 42px; display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0; overflow-y: auto; background: var(--paper); border-top: 1px solid var(--line); font-size: clamp(24px, 8vw, 38px); font-weight: 800; line-height: 1; letter-spacing: -0.045em; text-transform: none; opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-12px); transition: opacity 0.22s ease, transform 0.28s ease, visibility 0.28s; }
+  .nav[data-menu-open="true"] .navLinks { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+  .navLinks > a:not(.navCta) { padding: 17px 0; border-bottom: 1px solid var(--line); }
+  .navLinks > a:not(.navCta):hover { border-color: var(--line); color: var(--coral); }
+  .navCta { margin-top: 24px; padding: 18px 22px; align-self: flex-start; border-radius: 999px; font-size: 13px; line-height: 1; letter-spacing: 0.08em; text-transform: uppercase; }
+  .hero { min-height: calc(100svh - 72px); padding-top: 23px; }
   .eyebrow span:last-child { display: none; }
   .heroStage { margin-top: 7vh; background: #efc4c8; }
   .heroMessage { min-height: 500px; padding: 24px; background: transparent; }
@@ -379,5 +398,6 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .marquee span { animation: none; }
-  .roundLink, .projectImage img { transition: none; }
+  .roundLink, .projectImage img, .menuToggle span, .navLinks { transition: none; }
+  .motionReady .revealItem { opacity: 1; transform: none; transition: none; }
 }
