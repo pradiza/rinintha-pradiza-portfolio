@@ -8,7 +8,7 @@ export function SiteNav() {
     <nav className="nav" aria-label="Primary navigation">
       <a className="brand" href="/" aria-label="Rinintha Pradiza, home">RP<span>.</span></a>
       <div className="navLinks">
-        <a href="/profile">Profile</a><a href="/work">Work</a><a href="/services">Services</a><a href="/consultation">Consultation</a>
+        <a href="/">Home</a><a href="/profile">Profile</a><a href="/media">Media &amp; Press</a><a href="/work">Selected Work</a><a href="/services">Services</a><a href="/consultation">Consultation</a>
         <a className="navCta" href="/contact">Let&apos;s talk ↗</a>
       </div>
     </nav>
@@ -22,7 +22,7 @@ export function PageShell({ children }: Readonly<{ children: React.ReactNode }>)
 export function SiteFooter() {
   return (
     <footer className="siteFooter">
-      <div><p className="sectionLabel">Start a conversation</p><h2>Got a project in motion? <em>Let&apos;s collaborate!</em></h2></div>
+      <div><p className="sectionLabel">Start a conversation</p><h2>Got a project in motion? <em>Let&apos;s collaborate.</em></h2></div>
       <div className="footerLinks"><a href="/consultation">Indonesia consultation ↗</a><a href="/contact">Contact & enquiries ↗</a><a href={`mailto:${email}`}>{email} ↗</a>{socials.slice(0, 2).map((social) => <a key={social.label} href={social.href} target="_blank" rel="noreferrer">{social.label} ↗</a>)}</div>
       <div className="footerBottom"><span>Greater Jakarta, Indonesia</span><span>Available for select roles, projects, and consultations</span></div>
       <div className="footerMark" aria-hidden="true">RP<span>.</span></div>
@@ -49,13 +49,15 @@ function ProjectSummary({ project }: Readonly<{ project: FeaturedProject }>) {
 }
 
 export function ProjectCard({ project }: Readonly<{ project: FeaturedProject }>) {
+  const headlineStat = project.stats?.slice(0, 1);
+
   return (
     <article className={`projectCard tone-${project.tone}`}>
-      {project.image ? <div className="projectImage"><Image src={project.image} alt={project.imageAlt ?? ""} width={project.imageWidth ?? 1200} height={project.imageHeight ?? 800} sizes="(max-width: 820px) 100vw, 50vw" /></div> : <div className="projectNumberVisual" aria-label="Project scale">{project.stats?.map((stat) => <div key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div>}
+      {project.image ? <div className="projectImage"><Image src={project.image} alt={project.imageAlt ?? ""} width={project.imageWidth ?? 1200} height={project.imageHeight ?? 800} sizes="(max-width: 820px) 100vw, 50vw" /></div> : <div className="projectNumberVisual" aria-label="Project scale">{headlineStat?.map((stat) => <div key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div>}
       <div className="projectCardCopy">
         <div className="projectTopline"><span>{project.no}</span><span>{project.category}</span><span>{project.year}</span></div>
         <h3>{project.title}</h3><p className="projectRole">{project.role}</p><p><ProjectSummary project={project} /></p>
-        {project.image && project.stats ? <div className="projectStats">{project.stats.map((stat) => <div key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div> : null}
+        {project.image && headlineStat ? <div className="projectStats">{headlineStat.map((stat) => <div key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div> : null}
         <a className="textLink" href={`/work#${project.id}`}>View the story →</a>
       </div>
     </article>

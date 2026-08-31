@@ -1,6 +1,3 @@
-export const cvUrl =
-  "https://docs.google.com/document/d/1qZ46JpYMcu3XtEOopaiP4iDhn8wozHf3eMjZI797LYE/export?format=pdf";
-
 export const email = "rininthapradiza@gmail.com";
 
 export const socials = [
@@ -33,13 +30,13 @@ export type FeaturedProject = {
 export const featuredProjects: FeaturedProject[] = [
   {
     no: "01",
-    id: "hyper-wave",
-    title: "Hyper Wave Festival 2013",
-    year: "2013",
-    category: "Music festival · Jakarta",
-    role: "Event Director · Executive Producer · Creative Director",
+    id: "japanese-station-hyper-wave",
+    title: "Japanese Station / Hyper Wave Festival",
+    year: "2012–Present · 2013",
+    category: "Media platform · Original IP · Music festival",
+    role: "Co-founder, Creative Director & Business Development · Event Director / Executive Producer / Creative Director",
     summary:
-      "A two-day cross-cultural music festival supported by COOL JAPAN and TokyoGets, bringing three Japanese artists, VAMPS, DJ Kaya, and Reecho, together with five Indonesian bands: Nidji, Pee Wee Gaskins, Thirteen, Vegan, and P.R.I.D.E.",
+      "Co-founded Japanese Station and created Hyper Wave Festival, a two-day cross-cultural music property that brought three Japanese artists and five Indonesian bands to 5,000+ attendees in Jakarta.",
     image: "/images/hyper-wave-vamps-live.png",
     imageAlt: "VAMPS performing live at Hyper Wave Festival 2013 in Jakarta",
     imageWidth: 800,
@@ -50,6 +47,7 @@ export const featuredProjects: FeaturedProject[] = [
     secondaryImageHeight: 1047,
     tone: "ink",
     stats: [
+      { value: "2", label: "day festival" },
       { value: "3", label: "Japanese artists" },
       { value: "5", label: "Indonesian bands" },
       { value: "5,000+", label: "attendees" },
@@ -57,13 +55,32 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     no: "02",
+    id: "jkt48",
+    title: "JKT48 / Dentsu",
+    year: "2011–2012",
+    category: "Entertainment IP · Launch-year operations",
+    role: "Media Relations & Event Manager",
+    summary:
+      "Helped operate JKT48’s formative first year across media, events, production logistics, talent support, and Japanese-to-Indonesian lyric adaptation.",
+    image: "/images/jkt48-team.jpg",
+    imageAlt: "Rinintha Pradiza with colleagues at the JKT48 Theater in Jakarta",
+    imageWidth: 720,
+    imageHeight: 960,
+    tone: "teal",
+    stats: [
+      { value: "≈30", label: "appearance offers reviewed weekly" },
+      { value: "≈60", label: "talents supported" },
+    ],
+  },
+  {
+    no: "03",
     id: "japan-wave",
     title: "Japan Wave Expo 2016",
     year: "2016",
     category: "Fashion · Exhibition · Business matching",
     role: "Creative & Delivery Lead",
     summary:
-      "A JETRO-initiated business and cultural platform designed to connect Japanese fashion companies with the Indonesian market. Across three days in Jakarta, Japan Wave Expo combined B2B business matching, buyer and media engagement, test marketing, fashion showcases, and public programming, giving participating companies direct access to both commercial partners and Indonesian consumers.",
+      "Led creative and delivery for a JETRO-initiated platform connecting 16 Japanese fashion companies with Indonesian buyers, media, and consumers.",
     image: "/images/japan-wave-expo-2016-4k.png",
     imageAlt: "Japan Wave Expo 2016 fashion showcase at Central Park Mall in Jakarta",
     imageWidth: 3840,
@@ -75,15 +92,14 @@ export const featuredProjects: FeaturedProject[] = [
     ],
   },
   {
-    no: "03",
+    no: "04",
     id: "k-content",
     title: "K-Content Expo Indonesia 2016",
     year: "2016",
     category: "Government-backed content expo · Jakarta",
     role: "Head of Project · Show Director",
     summary:
-      "A Korea–Indonesia content and cultural showcase organized with KOCCA and BEKRAF, bringing Korean entertainment, digital content, and lifestyle programming to audiences at ICE BSD. Local production covered games, K-pop, beauty, food, taekwondo, screenings, and a government and VIP networking reception, coordinating multiple stakeholders, talents, and a 19-person local team and freelance crew.",
-    summaryHighlights: ["KOCCA", "BEKRAF", "19-person local team and freelance crew"],
+      "Led project and show delivery for a KOCCA–BEKRAF cultural showcase, coordinating government, talent, vendors, and a 19-person local team.",
     image: "/images/kcontent-expo-panorama.png",
     imageAlt: "Panoramic view of K-Content Expo Indonesia 2016 at ICE BSD",
     imageWidth: 2200,
@@ -92,45 +108,14 @@ export const featuredProjects: FeaturedProject[] = [
     stats: [{ value: "19", label: "local staff & freelancers led" }],
   },
   {
-    no: "04",
-    id: "jkt48",
-    title: "JKT48",
-    year: "2011–2012",
-    category: "Entertainment · Dentsu",
-    role: "Media Relations & Event Manager",
-    summary:
-      "Part of the launch-year team behind JKT48, Indonesia’s sister group of AKB48, during the group’s formative first year under Dentsu. The role spanned artist and schedule management, media and commercial opportunities, broadcast coordination, event and press production, member support, and content localization. Key projects included the AKB48 × JKT48 Concert, JKT48 School, and JKT48 Second Generation Audition, alongside Indonesian lyric adaptation and vocal-guide production.",
-    image: "/images/jkt48-team.jpg",
-    imageAlt: "Rinintha Pradiza with colleagues at the JKT48 Theater in Jakarta",
-    imageWidth: 720,
-    imageHeight: 960,
-    tone: "teal",
-  },
-  {
     no: "05",
-    id: "japanese-station",
-    title: "Japanese Station",
-    year: "2012–Present",
-    category: "Media · Community · Branded entertainment",
-    role: "Co-founder · Creative Director & Business Development",
-    summary:
-      "Built from a community-driven Japanese culture portal into a broader media, entertainment, talent, campaign, and event platform connecting Japanese pop culture with Indonesian audiences and brand partners. The work spanned content and creative direction, commercial partnerships, talent development, PR and campaigns, and original event IP, including JS Navigator, brand collaborations, and large-scale projects such as Hyper Wave Festival.",
-    image: "/images/japanese-station-team-event.png",
-    imageAlt: "Rinintha Pradiza with the Japanese Station team and event talents",
-    imageWidth: 768,
-    imageHeight: 512,
-    tone: "paper",
-    stats: [{ value: "10", label: "JS Navigator talents represented" }],
-  },
-  {
-    no: "06",
     id: "nila-baharuddin",
     title: "Nila Baharuddin",
     year: "2023–2025",
     category: "Fashion · Japan market development",
     role: "Brand Marketing Manager",
     summary:
-      "A Japan market-entry and brand activation program positioning Indonesian fashion designer Nila Baharuddin for new audiences in Tokyo. The campaign connected brand strategy, PR, partnerships, event production, and retail activation, progressing from a showcase at FEELSEEN Ginza to NEW ENERGY TOKYO and a two-week pop-up at Daimaru Tokyo. The program built visibility across media, industry, and consumer audiences, welcoming 100+ guests at the Ginza opening and generating ¥1M+ in retail sales at Daimaru.",
+      "Led Nila Baharuddin’s Japan market development across Ginza, NEW ENERGY Tokyo, and Daimaru Tokyo, connecting brand strategy with retail execution.",
     image: "/images/nila5.jpg",
     imageAlt: "A sculptural Nila Baharuddin fashion look",
     imageWidth: 1350,
@@ -139,6 +124,51 @@ export const featuredProjects: FeaturedProject[] = [
     stats: [
       { value: "100+", label: "FEELSEEN opening guests" },
       { value: "¥1M+", label: "Daimaru retail sales" },
+    ],
+  },
+  {
+    no: "06",
+    id: "cecilia",
+    title: "Cecilia / Holywings Group",
+    year: "2025–2026",
+    category: "Hospitality · Ongoing brand ownership",
+    role: "Marketing Communication Strategist",
+    summary:
+      "Owned Cecilia’s marketing direction, programs, and six-person team, linking brand positioning and audience activity with commercial performance.",
+    tone: "ink",
+    stats: [
+      { value: "Rp2.1B+", label: "monthly revenue surpassed" },
+      { value: "30%+", label: "food contribution" },
+    ],
+  },
+  {
+    no: "07",
+    id: "shiseido",
+    title: "Shiseido Beauty Redefined",
+    year: "2017–2018",
+    category: "Beauty · Multi-city experiential roadshow",
+    role: "Creative & Delivery Lead",
+    summary:
+      "Led creative and production delivery for a four-city Shiseido experiential roadshow across Indonesia.",
+    tone: "coral",
+    stats: [
+      { value: "4", label: "Indonesian cities" },
+      { value: "2017–18", label: "roadshow period" },
+    ],
+  },
+  {
+    no: "08",
+    id: "side-tokyo",
+    title: "SIDE Co. / Tokyo Fashion Week Projects",
+    year: "2017",
+    category: "Fashion · Tokyo · Cross-border delivery",
+    role: "Project Manager (based in Tokyo)",
+    summary:
+      "Managed fashion-week, exhibition, and retail projects while based in Tokyo, coordinating designers, venues, logistics, pop-ups, and VIP events.",
+    tone: "soft",
+    stats: [
+      { value: "Tokyo", label: "based in market" },
+      { value: "3", label: "fashion-week projects" },
     ],
   },
 ];
@@ -152,20 +182,20 @@ export type TimelineItem = {
 };
 
 export const timeline: TimelineItem[] = [
-  { period: "2003–2004", title: "U FM Radio · Cupang (Cuma Jepang)", role: "Guest Presenter, “Miss Gossip”", text: "Researched Japanese artists and music independently, then turned that knowledge into Indonesian-language radio segments for a wider audience." },
-  { period: "2004–Present", title: "MC, Moderator & Translator", role: "Independent", text: "A paid MC career that grew from Japanese pop-culture events into festivals, exhibitions, corporate programs, concerts, government seminars, and major fan conventions." },
-  { period: "2007–2011", title: "Japan International Cooperation Agency", role: "Project Secretary · Three technical-cooperation projects", text: "Supported railway safety, aircraft-accident investigation, and maritime-security cooperation through research, translation, logistics, stakeholder coordination, seminars, and site visits." },
-  { period: "2008–2013", title: "Go Raikon & independent music projects", role: "Founder · Event Producer · Talent Manager", text: "Developed early Japanese pop-culture programs including Nihon no Matsuri, Little Tokyo Ennichisai, CLAS:H, and the Japan–Indonesia Friendship Fashion Show; managed On! Project, Honeybeat, and Proudly Presents across schedules, promotion, styling, media, merchandise, income, and original music." },
-  { period: "2011", title: "AOI Pro. / AOI Asia Indonesia", role: "Production Manager", text: "Led research, staffing, casting and talent processes, locations, budgets, and production preparation across the Honda CBR150R TVC with Casey Stoner, Bank of Tokyo-Mitsubishi UFJ corporate film, and JKT48 TVCs and music videos." },
-  { period: "2011–2012", title: "Dentsu / JKT48", role: "Media Relations & Event Manager", text: "Managed media opportunities, appearances, events, production logistics, partner coordination, and Japanese-to-Indonesian lyric adaptation during JKT48’s formative first year, later serving as a judge for the televised second-generation audition.", textHighlights: ["Japanese-to-Indonesian lyric adaptation"] },
-  { period: "2012–Present", title: "Japanese Station", role: "Co-founder · Creative Director & Business Development", text: "Built a media and community platform into branded content, events, talent representation, sponsorship, business development, and original intellectual property including Hyper Wave Festival." },
-  { period: "2015–2018", title: "ZeeMi · Zygma Organizer · 7Dimension", role: "Content Producer · Co-founder/CCO · Head of Creative", text: "Produced interactive livestream formats and led creative, commercial, and show delivery for exhibitions, roadshows, festivals, Korean-content programs, beauty brands, and corporate clients." },
-  { period: "2017", title: "SIDE Co., Ltd. · Tokyo Fashion Week projects", role: "Project Manager (relocated to Tokyo)", text: "Managed cross-border fashion projects across Asian Fashion Meets Tokyo and Fashion Hong Kong, coordinating designers, venues, shipping and imports, retail and pop-up operations, inventory, VIP events, and international customer engagement." },
-  { period: "2021–2023", title: "Parallax Network", role: "Head of Public Relations / Creative Team", text: "Led PR strategy, launch narratives, proposals, content, decks, and press materials across technology, entertainment, NFT, and creative-economy projects." },
-  { period: "2023–2025", title: "Nila Baharuddin", role: "Brand Marketing Manager", text: "Led brand strategy, campaigns, partnerships, sales support, exhibitions, and Japan-market expansion—from cultural narrative and PR to shipping, buyers, retail execution, and reporting." },
-  { period: "2024–2025", title: "Asia Koshien / NB.ACADEMY", role: "Event Organizer for NB.ACADEMY · VIP Afterparty & Cross-Cultural Sports Program", text: "Served as NB.ACADEMY’s event organizer for the 2024 No Border Asia Community VIP afterparty at JS Luwansa—the official closing celebration and awards event for Asia Koshien—coordinating special guests, government and sports-industry VIPs, talk sessions, sponsors, exhibitors, networking, and hybrid participation; also contributed to the 2025 Jakarta program and Japanese-language community outreach materials." },
-  { period: "2025–2026", title: "HW Group", role: "Marketing Communication Strategist → Senior Creative Strategist", text: "Worked first as brand owner across Cecilia, H Social House, and H Bar Kuala Lumpur, then as an agency-side creative team head across hospitality and premium beverage accounts." },
   { period: "2026", title: "PT Garda Citra Nusantara", role: "Founder", text: "Established an independent Indonesian legal entity to support larger professional engagements and corporate collaborations across creative strategy, research, events, brand activations, media, and Indonesia–Japan projects." },
+  { period: "2025–2026", title: "Holywings Group", role: "Marketing Communication Strategist → Senior Creative Strategist", text: "Worked first as brand owner across Cecilia, H Social House, and H Bar Kuala Lumpur, then as an agency-side creative team head across hospitality and premium beverage accounts." },
+  { period: "2024–2025", title: "Asia Koshien / NB.ACADEMY", role: "Event Organizer for NB.ACADEMY · VIP Afterparty & Cross-Cultural Sports Program", text: "Served as NB.ACADEMY’s event organizer for the 2024 No Border Asia Community VIP afterparty at JS Luwansa—the official closing celebration and awards event for Asia Koshien—coordinating special guests, government and sports-industry VIPs, talk sessions, sponsors, exhibitors, networking, and hybrid participation; also contributed to the 2025 Jakarta program and Japanese-language community outreach materials." },
+  { period: "2023–2025", title: "Nila Baharuddin", role: "Brand Marketing Manager", text: "Led brand strategy, campaigns, partnerships, sales support, exhibitions, and Japan-market expansion—from cultural narrative and PR to shipping, buyers, retail execution, and reporting." },
+  { period: "2021–2023", title: "Parallax Network", role: "Head of Public Relations / Creative Team", text: "Led PR strategy, launch narratives, proposals, content, decks, and press materials across technology, entertainment, NFT, and creative-economy projects." },
+  { period: "2017", title: "SIDE Co., Ltd. · Tokyo Fashion Week projects", role: "Project Manager (relocated to Tokyo)", text: "Managed cross-border fashion projects across Asian Fashion Meets Tokyo and Fashion Hong Kong, coordinating designers, venues, shipping and imports, retail and pop-up operations, inventory, VIP events, and international customer engagement." },
+  { period: "2015–2018", title: "ZeeMi · Zygma Organizer · 7Dimension", role: "Content Producer · Co-founder/CCO · Head of Creative", text: "Produced interactive livestream formats and led creative, commercial, and show delivery for exhibitions, roadshows, festivals, Korean-content programs, beauty brands, and corporate clients." },
+  { period: "2012–Present", title: "Japanese Station", role: "Co-founder · Creative Director & Business Development", text: "Built a media and community platform into branded content, events, talent representation, sponsorship, business development, and original intellectual property including Hyper Wave Festival." },
+  { period: "2011–2012", title: "Dentsu / JKT48", role: "Media Relations & Event Manager", text: "Managed media opportunities, appearances, events, production logistics, partner coordination, and Japanese-to-Indonesian lyric adaptation during JKT48’s formative first year, later serving as a judge for the televised second-generation audition.", textHighlights: ["Japanese-to-Indonesian lyric adaptation"] },
+  { period: "2011", title: "AOI Pro. / AOI Asia Indonesia", role: "Production Manager", text: "Led research, staffing, casting and talent processes, locations, budgets, and production preparation across the Honda CBR150R TVC with Casey Stoner, Bank of Tokyo-Mitsubishi UFJ corporate film, and JKT48 TVCs and music videos." },
+  { period: "2008–2013", title: "Go Raikon & independent music projects", role: "Founder · Event Producer · Talent Manager", text: "Developed early Japanese pop-culture programs including Nihon no Matsuri, Little Tokyo Ennichisai, CLAS:H, and the Japan–Indonesia Friendship Fashion Show; managed On! Project, Honeybeat, and Proudly Presents across schedules, promotion, styling, media, merchandise, income, and original music." },
+  { period: "2007–2011", title: "Japan International Cooperation Agency", role: "Project Secretary · Three technical-cooperation projects", text: "Supported railway safety, aircraft-accident investigation, and maritime-security cooperation through research, translation, logistics, stakeholder coordination, seminars, and site visits." },
+  { period: "2004–Present", title: "MC, Moderator & Translator", role: "Independent", text: "A paid MC career that grew from Japanese pop-culture events into festivals, exhibitions, corporate programs, concerts, government seminars, and major fan conventions." },
+  { period: "2003–2004", title: "U FM Radio · Cupang (Cuma Jepang)", role: "Guest Presenter, “Miss Gossip”", text: "Researched Japanese artists and music independently, then turned that knowledge into Indonesian-language radio segments for a wider audience." },
 ];
 
 export const personalMedia = [
@@ -207,9 +237,9 @@ export const projectPress = [
 ];
 
 export const services = [
-  { no: "01", title: "Strategy & research", text: "Market landscaping, audience and community insight, competitor analysis, positioning, campaign strategy, PR, partnership planning, and practical recommendations." },
-  { no: "02", title: "Projects & experiences", text: "Creative direction and leadership for campaigns, events, exhibitions, festivals, pop-ups, branded content, show production, budgets, vendors, and on-site delivery." },
-  { no: "03", title: "Indonesia ↔ Japan", text: "Market-entry support, cultural adaptation, localization, partner mapping, buyer and media relations, and cross-border project leadership." },
+  { no: "01", title: "Strategy & research", text: "Market and audience research, positioning, campaign and brand strategy, competitor context, PR direction, partnership planning, and recommendations grounded in the decision at hand." },
+  { no: "02", title: "Projects & experiences", text: "Senior leadership for campaigns, events, exhibitions, festivals, pop-ups, branded content, and special projects—from the working idea and commercial story through budgets, teams, vendors, and delivery." },
+  { no: "03", title: "Indonesia ↔ Japan", text: "Market-entry perspective, cultural and audience context, localization, partner mapping, buyer and media relations, cross-border coordination, and practical support for Japanese ideas entering Indonesia or Indonesian work entering Japan." },
 ];
 
 export const specialistCapabilities = [
