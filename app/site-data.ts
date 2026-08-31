@@ -3,6 +3,7 @@ export const email = "rininthapradiza@gmail.com";
 export const socials = [
   { label: "Instagram", href: "https://www.instagram.com/rininthapradiza/" },
   { label: "X / Twitter", href: "https://x.com/RininthaPradiza" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/rinintha-pradiza/" },
   { label: "Email", href: `mailto:${email}` },
 ];
 

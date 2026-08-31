@@ -60,7 +60,7 @@ export default function JapaneseHome() {
         <div className="consultTeaserCopy">
           <p>インドネシア進出を検討する日本のエンターテインメント、メディア、ポップカルチャー、イベント、ライフスタイル企業向けの、英語による60分の戦略セッションです。</p>
           <p>オーディエンス、ポジショニング、現地パートナー、アクティベーション、文化的なニュアンス、参入ルートなど、実際の意思決定を一つ持ち込んでください。</p>
-          <div className="priceLine"><strong>USD 100</strong><span>導入価格 · 60分</span></div><a className="pillButton lightButton" href="/ja/consultation">内容を確認する ↗</a>
+          <a className="pillButton lightButton" href="/ja/consultation">内容を確認する ↗</a>
         </div>
       </section>
 

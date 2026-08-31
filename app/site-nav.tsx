@@ -56,7 +56,7 @@ export function SiteNav({ locale = "en" }: Readonly<{ locale?: Locale }>) {
       <div className="navLinks" id="primary-menu">
         {primaryLinks[locale].map((link) => <a key={link.href} href={link.href} onClick={() => setIsOpen(false)}>{link.label}</a>)}
         <a className="languageSwitch" href={alternateHref} hrefLang={isJapanese ? "en" : "ja"} lang={isJapanese ? "en" : "ja"} onClick={() => setIsOpen(false)}>{isJapanese ? "EN" : "日本語"}</a>
-        <a className="navCta" href={isJapanese ? "/ja/contact" : "/contact"} onClick={() => setIsOpen(false)}>{isJapanese ? "お問い合わせ" : "Let&apos;s talk"} ↗</a>
+        <a className="navCta" href={isJapanese ? "/ja/contact" : "/contact"} onClick={() => setIsOpen(false)}>{isJapanese ? "お問い合わせ" : "Let's talk"} ↗</a>
       </div>
       <div className="navControls">
         <a className="mobileLanguageSwitch" href={alternateHref} hrefLang={isJapanese ? "en" : "ja"} lang={isJapanese ? "en" : "ja"}>{isJapanese ? "EN" : "日本語"}</a>

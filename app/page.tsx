@@ -19,7 +19,7 @@ export default function Home() {
         <div className="eyebrow"><span>Greater Jakarta ↔ Tokyo</span><span>Creative strategy &amp; activation · Integrated marketing · Research</span></div>
         <div className="heroStage">
           <div className="heroMessage">
-            <h1>Turning insight<br />into ideas<br /><em>people feel.</em></h1>
+            <h1>Insight →<br />Ideas →<br /><em>Impact!</em></h1>
             <a className="roundLink" href="/work" aria-label="Explore selected work">→</a>
           </div>
           <div className="heroMobilePhoto" aria-hidden="true" />
@@ -58,7 +58,7 @@ export default function Home() {
         <div className="consultTeaserCopy">
           <p>A focused 60-minute English-language strategy call for Japanese entertainment, media, pop-culture, event, and lifestyle companies exploring Indonesia.</p>
           <p>Discuss one real decision involving audiences, positioning, local partnerships, activation opportunities, cultural nuance, or a potential entry route.</p>
-          <div className="priceLine"><strong>USD 100</strong><span>introductory rate · 60 minutes</span></div><a className="pillButton lightButton" href="/consultation">See what the consultation includes ↗</a>
+          <a className="pillButton lightButton" href="/consultation">See what the consultation includes ↗</a>
         </div>
       </section>
 

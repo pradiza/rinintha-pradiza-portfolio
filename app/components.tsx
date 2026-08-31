@@ -15,7 +15,7 @@ export function SiteFooter({ locale = "en" }: Readonly<{ locale?: Locale }>) {
     return (
       <footer className="siteFooter">
         <div><p className="sectionLabel">お問い合わせ</p><h2>動き始めたプロジェクトを、<em>一緒に前へ。</em></h2></div>
-        <div className="footerLinks"><a href="/ja/consultation">インドネシア市場コンサルテーション ↗</a><a href="/ja/contact">ご相談・お問い合わせ ↗</a><a href={`mailto:${email}`}>{email} ↗</a>{socials.slice(0, 2).map((social) => <a key={social.label} href={social.href} target="_blank" rel="noreferrer">{social.label} ↗</a>)}</div>
+        <div className="footerLinks"><a href="/ja/consultation">インドネシア市場コンサルテーション ↗</a><a href="/ja/contact">ご相談・お問い合わせ ↗</a><a href={`mailto:${email}`}>{email} ↗</a>{socials.slice(0, 3).map((social) => <a key={social.label} href={social.href} target="_blank" rel="noreferrer">{social.label} ↗</a>)}</div>
         <div className="footerBottom"><span>インドネシア・ジャカルタ首都圏</span><span>プロジェクト、役職、コンサルテーションのご相談を承ります</span></div>
         <div className="footerMark" aria-hidden="true">RP<span>.</span></div>
       </footer>
@@ -25,7 +25,7 @@ export function SiteFooter({ locale = "en" }: Readonly<{ locale?: Locale }>) {
   return (
     <footer className="siteFooter">
       <div><p className="sectionLabel">Start a conversation</p><h2>Got a project in motion? <em>Let&apos;s collaborate.</em></h2></div>
-      <div className="footerLinks"><a href="/consultation">Indonesia consultation ↗</a><a href="/contact">Contact & enquiries ↗</a><a href={`mailto:${email}`}>{email} ↗</a>{socials.slice(0, 2).map((social) => <a key={social.label} href={social.href} target="_blank" rel="noreferrer">{social.label} ↗</a>)}</div>
+      <div className="footerLinks"><a href="/consultation">Indonesia consultation ↗</a><a href="/contact">Contact & enquiries ↗</a><a href={`mailto:${email}`}>{email} ↗</a>{socials.slice(0, 3).map((social) => <a key={social.label} href={social.href} target="_blank" rel="noreferrer">{social.label} ↗</a>)}</div>
       <div className="footerBottom"><span>Greater Jakarta, Indonesia</span><span>Available for select roles, projects, and consultations</span></div>
       <div className="footerMark" aria-hidden="true">RP<span>.</span></div>
     </footer>
