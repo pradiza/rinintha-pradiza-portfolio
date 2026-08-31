@@ -59,11 +59,9 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .proof strong span { color: var(--coral); }
 .proof p { max-width: 220px; margin: 0; font-size: 11px; line-height: 1.5; letter-spacing: 0.08em; text-transform: uppercase; }
 
-.homeTerritories, .featuredSection, .timelineSection, .mediaSection, .pressSection, .servicesSection, .archiveSection { padding: 130px 4vw; }
+.featuredSection, .timelineSection, .mediaSection, .pressSection, .servicesSection, .archiveSection { padding: 130px 4vw; }
 .sectionHead { display: grid; grid-template-columns: 1fr 2fr; align-items: start; margin-bottom: 75px; }
 .sectionHead h2, .consultTeaser h2, .socialSection h2, .servicesSection h2 { margin: 0; font-size: clamp(54px, 7.4vw, 110px); letter-spacing: -0.065em; line-height: 0.9; }
-
-.homeTerritories { background: var(--soft); border-bottom: 1px solid var(--ink); }
 
 .featuredGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .projectCard { min-height: 770px; display: grid; grid-template-rows: 45% 55%; overflow: hidden; }
@@ -84,8 +82,6 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .projectNumberVisual { display: grid; align-content: center; gap: 20px; padding: 35px; background: rgba(0, 0, 0, 0.08); }
 .projectNumberVisual div { display: flex; align-items: end; justify-content: space-between; gap: 20px; padding-bottom: 16px; border-bottom: 1px solid currentColor; }
 .projectNumberVisual strong { font-size: clamp(72px, 9vw, 140px); letter-spacing: -0.08em; line-height: 0.75; color: var(--lime); }
-.projectCard .projectNumberVisual strong { font-size: clamp(54px, 6vw, 96px); overflow-wrap: anywhere; }
-.workStoryVisual .projectNumberVisual strong { font-size: clamp(54px, 6vw, 100px); overflow-wrap: anywhere; }
 .projectNumberVisual span { max-width: 120px; font-size: 10px; line-height: 1.4; letter-spacing: 0.1em; text-align: right; text-transform: uppercase; }
 .tone-ink { background: var(--ink); color: var(--paper); }
 .tone-lime { background: var(--lime); }
@@ -185,7 +181,7 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .workStoryVisual .projectNumberVisual { height: 100%; }
 .workStoryCopy { padding: 50px 4vw; }
 .caseMeta { margin: 0 0 42px; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; }
-.workStory h2 { margin: 0 0 18px; font-size: clamp(48px, 5.8vw, 92px); line-height: 0.88; letter-spacing: -0.07em; }
+.workStory h2 { margin: 0 0 18px; font-size: clamp(54px, 6.8vw, 104px); line-height: 0.86; letter-spacing: -0.07em; }
 .storySections { margin-top: 45px; border-top: 1px solid currentColor; }
 .storySections > div { display: grid; grid-template-columns: 150px 1fr; gap: 25px; padding: 22px 0; border-bottom: 1px solid currentColor; }
 .storySections span { font-size: 9px; font-weight: 800; letter-spacing: 0.11em; text-transform: uppercase; }
@@ -326,7 +322,7 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
   .roundLink { width: 54px; height: 54px; flex-basis: 54px; }
   .proof { grid-template-columns: 1fr; }
   .proof > div { min-height: 210px; border-right: 0; border-bottom: 1px solid var(--ink); }
-  .homeTerritories, .featuredSection, .timelineSection, .mediaSection, .pressSection, .servicesSection, .archiveSection, .momentsSection, .consultCredibility, .consultProcess, .consultRequest { padding: 90px 4vw; }
+  .featuredSection, .timelineSection, .mediaSection, .pressSection, .servicesSection, .archiveSection, .momentsSection, .consultCredibility, .consultProcess, .consultRequest { padding: 90px 4vw; }
   .sectionHead { grid-template-columns: 1fr; gap: 34px; }
   .featuredGrid { grid-template-columns: 1fr; }
   .projectCard, .projectCard:nth-child(3n + 1) { min-height: 690px; grid-template-rows: 42% 58%; }
