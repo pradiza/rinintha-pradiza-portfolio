@@ -5,6 +5,7 @@ import { email, socials } from "../site-data";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Contact Rinintha Pradiza about project work, roles, consultations, MC engagements, translation, and Indonesia–Japan collaboration.",
+  alternates: { canonical: "/contact", languages: { en: "/contact", ja: "/ja/contact" } },
 };
 
 export default function ContactPage() {

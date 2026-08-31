@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Indonesia Market Entry Consultant for Japanese Companies",
   description: "A 60-minute Indonesia market entry strategy call for Japanese entertainment, media, pop-culture, event, and lifestyle companies. Get practical guidance on audiences, localization, partnerships, and activation.",
   keywords: ["Indonesia market entry consultant", "Indonesia market entry consultation", "Japanese companies Indonesia", "Japan Indonesia business strategy", "Indonesia entertainment market", "Indonesia brand activation", "Indonesia localization strategy"],
-  alternates: { canonical: "/consultation" },
+  alternates: { canonical: "/consultation", languages: { en: "/consultation", ja: "/ja/consultation" } },
   openGraph: {
     title: "Indonesia Market Entry Consultation for Japanese Companies",
     description: "Practical, market-specific guidance for Japanese entertainment, media, pop-culture, event, and lifestyle companies exploring Indonesia.",

@@ -5,6 +5,7 @@ import { mediaArchive, personalMedia, projectPress } from "../site-data";
 export const metadata: Metadata = {
   title: "Media & Press",
   description: "Selected interviews, appearances, archival credits, academic references, and independent coverage connected to Rinintha Pradiza and her work.",
+  alternates: { canonical: "/media", languages: { en: "/media", ja: "/ja/media" } },
 };
 
 export default function MediaPage() {

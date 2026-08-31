@@ -7,6 +7,7 @@ import type { TimelineItem } from "../site-data";
 export const metadata: Metadata = {
   title: "Profile",
   description: "Meet Rinintha Pradiza: professional background, career timeline, capabilities, and selected working moments.",
+  alternates: { canonical: "/profile", languages: { en: "/profile", ja: "/ja/profile" } },
 };
 
 const professionalMoments = [

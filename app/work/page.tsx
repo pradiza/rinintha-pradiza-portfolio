@@ -6,6 +6,7 @@ import { featuredProjects } from "../site-data";
 export const metadata: Metadata = {
   title: "Selected Work",
   description: "Eight flagship projects by Rinintha Pradiza across strategy, entertainment, international events, market entry, experiential marketing, hospitality, and Indonesia–Japan work.",
+  alternates: { canonical: "/work", languages: { en: "/work", ja: "/ja/work" } },
 };
 
 const supportingLinks: Record<string, Array<{ label: string; href: string }>> = {

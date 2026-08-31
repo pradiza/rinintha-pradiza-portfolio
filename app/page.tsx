@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import { PageShell, ProjectCard, SiteFooter } from "./components";
 import { featuredProjects } from "./site-data";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/", languages: { en: "/", ja: "/ja" } },
+};
 
 const homeTerritories = [
   { no: "01", title: "Strategy & research", text: "Research and strategic direction for brands, audiences, campaigns, and market decisions." },

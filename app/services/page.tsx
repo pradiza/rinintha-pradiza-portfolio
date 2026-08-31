@@ -5,6 +5,7 @@ import { services, specialistCapabilities } from "../site-data";
 export const metadata: Metadata = {
   title: "Services & Consultation",
   description: "Work with Rinintha Pradiza on Indonesia market entry, research, creative strategy, campaigns, special projects, proposals, MC work, and localization.",
+  alternates: { canonical: "/services", languages: { en: "/services", ja: "/ja/services" } },
 };
 
 export default function ServicesPage() {
