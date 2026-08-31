@@ -39,7 +39,7 @@ export default function ConsultationPage() {
       <PageHero
         label="Indonesia market entry consultation for Japanese companies"
         title={<>Enter Indonesia with <em>clarity.</em></>}
-        intro="A focused 60-minute Indonesia market entry strategy call with Rinintha Pradiza for Japanese entertainment, media, pop-culture, event, and lifestyle companies exploring Indonesia."
+        intro="A focused 60-minute Indonesia Market Entry Strategy Call for Japanese entertainment, media, pop-culture, event, lifestyle, and consumer-facing companies with one real decision to examine."
       />
 
       <section className="consultOffer consultationScope" id="scope">
@@ -59,12 +59,12 @@ export default function ConsultationPage() {
       </section>
 
       <section className="consultCredibility" aria-labelledby="why-rinintha">
-        <div className="sectionHead"><p className="sectionLabel">Why Rinintha</p><div><h2 id="why-rinintha">Experience on both sides of <em>the bridge.</em></h2><p className="sectionIntro">The advice is grounded in work inside Japanese IP localization, JETRO-backed market-entry programming, media and community building, branded activation, and consumer-facing projects across Indonesia and Japan.</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">Why Rinintha</p><div><h2 id="why-rinintha">Experience inside the <em>actual work.</em></h2><p className="sectionIntro">The advice is grounded in Japanese IP localization, JETRO-backed market-entry programming, media and community building, buyer relations, branded activation, and projects delivered in both Indonesia and Japan.</p></div></div>
         <div className="credibilityGrid">
           <article><span>01 · Entertainment localization</span><h3>JKT48</h3><p>Worked within the group&apos;s formative launch period across event and media relations, appearances, partner coordination, production logistics, and Japanese-to-Indonesian lyric adaptation.</p><a className="textLink" href="/work#jkt48">View related work →</a></article>
           <article><span>02 · Market-entry programming</span><h3>Japan Wave Expo</h3><p>Helped build a JETRO-initiated platform combining business matching, buyer and media engagement, test marketing, fashion showcases, and public programming for Japanese companies entering Indonesia.</p><a className="textLink" href="/work#japan-wave">View related work →</a></article>
-          <article><span>03 · Audience and partnership building</span><h3>Japanese Station</h3><p>Co-built a Japanese media and community platform into branded content, events, talent representation, sponsorship, research, partnerships, and original intellectual property.</p><a className="textLink" href="/work#japanese-station">View related work →</a></article>
-          <article><span>04 · Cross-border execution</span><h3>Indonesia ↔ Japan</h3><p>Experience spans strategy decks, production floors, live stages, exhibitions, buyer relations, PR, retail, and market expansion—connecting commercial intent with what audiences and partners actually experience.</p><a className="textLink" href="/profile">Read the career timeline →</a></article>
+          <article><span>03 · Audience and partnership building</span><h3>Japanese Station</h3><p>Co-built a Japanese media and community platform into branded content, events, talent representation, sponsorship, research, partnerships, and original intellectual property.</p><a className="textLink" href="/work#japanese-station-hyper-wave">View related work →</a></article>
+          <article><span>04 · Work inside Japan</span><h3>Tokyo projects</h3><p>Based in Tokyo for fashion-week and retail projects, then led Japan-market development for Nila Baharuddin across gallery, trade-fair, buyer, and department-store environments.</p><a className="textLink" href="/work#side-tokyo">View related work →</a></article>
         </div>
       </section>
 

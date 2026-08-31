@@ -37,11 +37,11 @@ function TimelineText({ item }: Readonly<{ item: TimelineItem }>) {
 export default function ProfilePage() {
   return (
     <PageShell>
-      <PageHero label="Profile / About Rinintha" title={<>The person behind<br />the <em>projects.</em></>} intro={<>A strategist, producer, and builder working at the intersection of <strong>brands, culture, entertainment, and experience</strong>, with a career spanning integrated marketing, events, media, and cross-border projects between Indonesia and Japan.</>} />
+      <PageHero label="Profile / About Rinintha" title={<>The person behind<br />the <em>projects.</em></>} intro={<>A cross-disciplinary strategist and producer working at the intersection of <strong>brands, culture, entertainment, and experience</strong>, with a career spanning research, integrated marketing, media, live projects, and work between Indonesia and Japan.</>} />
 
       <section className="profileImageLead" aria-label="Portraits of Rinintha Pradiza">
         <div className="profileMainImage"><Image src="/images/rinintha-profile.jpg" alt="Rinintha Pradiza at a cultural event in Japan" width={1080} height={1080} sizes="(max-width: 820px) 100vw, 62vw" priority /></div>
-        <div className="profileImageCopy"><p className="sectionLabel">Strategist · Producer · Cross-cultural operator</p><p>I have never been interested in staying in one lane. The useful work happens where the lanes meet.</p><div className="profileSmallImage"><Image src="/images/rinintha-profile-bw.jpg" alt="Black-and-white portrait of Rinintha Pradiza" width={960} height={960} sizes="(max-width: 820px) 100vw, 32vw" /></div></div>
+        <div className="profileImageCopy"><p className="sectionLabel">Strategist · Producer · Indonesia–Japan specialist</p><p>The sectors changed. The work often asked the same thing: understand what the project needed, then help it function in the real world.</p><div className="profileSmallImage"><Image src="/images/rinintha-profile-bw.jpg" alt="Black-and-white portrait of Rinintha Pradiza" width={960} height={960} sizes="(max-width: 820px) 100vw, 32vw" /></div></div>
       </section>
 
       <section className="profileStatement">
@@ -64,19 +64,19 @@ export default function ProfilePage() {
       </section>
 
       <section className="momentsSection" aria-labelledby="moments-title">
-        <div className="sectionHead"><p className="sectionLabel">Professional moments</p><div><h2 id="moments-title">In the room,<br /><em>doing the work.</em></h2><p className="sectionIntro">A few glimpses of the teams, stages, and market-facing environments behind the formal job titles.</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">Professional moments</p><div><h2 id="moments-title">Where the work<br /><em>happened.</em></h2><p className="sectionIntro">Teams, stages, production rooms, trade fairs, and public-facing environments behind the formal job titles.</p></div></div>
         <div className="momentsGrid">{professionalMoments.map((moment) => <figure key={moment.src}><Image src={moment.src} alt={moment.title} width={moment.width} height={moment.height} sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 33vw" /><figcaption><span>{moment.label}</span>{moment.title}</figcaption></figure>)}</div>
       </section>
 
       <section className="mediaSection" aria-labelledby="media-title">
-        <div className="sectionHead"><p className="sectionLabel">In the media & public conversations</p><div><h2 id="media-title">Work, words &<br /><em>recognition.</em></h2><p className="sectionIntro">Selected interviews, press references, speaking appearances, academic research, and third-party coverage connected to Rinintha&apos;s career.</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">In the media & public conversations</p><div><h2 id="media-title">Interviews, credits &<br /><em>public record.</em></h2><p className="sectionIntro">Independent sources that mention Rinintha directly: interviews, quoted coverage, speaking appearances, academic research, and archival credits.</p></div></div>
         <div className="mediaLinkGrid">{personalMedia.map((item) => <a key={item.href} className="mediaLinkCard" href={item.href} target="_blank" rel="noreferrer"><span>{item.source}</span><h3>{item.title}</h3><p>{item.note}</p><strong>Open source ↗</strong></a>)}</div>
         <div className="mediaArchiveHead"><p className="sectionLabel">Selected archive</p><p>Archival credits, hosting records, and event documentation.</p></div>
         <div className="mediaLinkGrid mediaArchiveGrid">{mediaArchive.map((item) => <a key={item.href} className="mediaLinkCard" href={item.href} target="_blank" rel="noreferrer"><span>{item.source}</span><h3>{item.title}</h3><p>{item.note}</p><strong>Open source ↗</strong></a>)}</div>
       </section>
 
       <section className="pressSection" aria-labelledby="press-title">
-        <div className="sectionHead"><p className="sectionLabel">Projects in the press</p><div><h2 id="press-title">Work that travelled<br /><em>beyond the room.</em></h2><p className="sectionIntro">Independent and institutional coverage of selected projects Rinintha helped shape and deliver.</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">Projects in the press</p><div><h2 id="press-title">Selected project<br /><em>coverage.</em></h2><p className="sectionIntro">Independent and institutional reporting on projects Rinintha helped shape and deliver. These sources document the work rather than profile her directly.</p></div></div>
         <div className="pressList">{projectPress.map((item) => <a key={item.href} href={item.href} target="_blank" rel="noreferrer"><span>{item.source}</span><h3>{item.title}</h3><p>{item.note}</p><strong>Read ↗</strong></a>)}</div>
       </section>
 
