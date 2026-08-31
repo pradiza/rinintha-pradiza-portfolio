@@ -28,7 +28,7 @@ export type FeaturedProject = {
   stats?: Array<{ value: string; label: string }>;
 };
 
-export const featuredProjects: FeaturedProject[] = [
+const featuredProjectsSource: FeaturedProject[] = [
   {
     no: "01",
     id: "japanese-station-hyper-wave",
@@ -76,7 +76,7 @@ export const featuredProjects: FeaturedProject[] = [
   {
     no: "03",
     id: "japan-wave",
-    title: "Japan Wave Expo 2016",
+    title: "Japan Wave Expo",
     year: "2016",
     category: "Fashion · Exhibition · Business matching",
     role: "Creative & Delivery Lead",
@@ -95,7 +95,7 @@ export const featuredProjects: FeaturedProject[] = [
   {
     no: "04",
     id: "k-content",
-    title: "K-Content Expo Indonesia 2016",
+    title: "K-Content Expo Indonesia",
     year: "2016",
     category: "Government-backed content expo · Jakarta",
     role: "Head of Project · Show Director",
@@ -168,7 +168,7 @@ export const featuredProjects: FeaturedProject[] = [
   {
     no: "08",
     id: "side-tokyo",
-    title: "SIDE Co. / Tokyo Fashion Week Projects",
+    title: "SIDE Co. / Fashion Week Tokyo Projects",
     year: "2017",
     category: "Amazon Fashion Week TOKYO · Fashion Hong Kong 2018 S/S",
     role: "Project Manager (based in Tokyo)",
@@ -186,6 +186,22 @@ export const featuredProjects: FeaturedProject[] = [
   },
 ];
 
+const featuredProjectOrder = [
+  "japanese-station-hyper-wave",
+  "jkt48",
+  "japan-wave",
+  "k-content",
+  "shiseido",
+  "nila-baharuddin",
+  "cecilia",
+  "side-tokyo",
+] as const;
+
+export const featuredProjects: FeaturedProject[] = featuredProjectOrder.map((id, index) => ({
+  ...featuredProjectsSource.find((project) => project.id === id)!,
+  no: String(index + 1).padStart(2, "0"),
+}));
+
 export type TimelineItem = {
   period: string;
   title: string;
@@ -200,7 +216,7 @@ export const timeline: TimelineItem[] = [
   { period: "2024–2025", title: "Asia Koshien / NB.ACADEMY", role: "Event Organizer for NB.ACADEMY · VIP Afterparty & Cross-Cultural Sports Program", text: "Served as NB.ACADEMY’s event organizer for the 2024 No Border Asia Community VIP afterparty at JS Luwansa—the official closing celebration and awards event for Asia Koshien—coordinating special guests, government and sports-industry VIPs, talk sessions, sponsors, exhibitors, networking, and hybrid participation; also contributed to the 2025 Jakarta program and Japanese-language community outreach materials." },
   { period: "2023–2025", title: "Nila Baharuddin", role: "Brand Marketing Manager", text: "Led brand strategy, campaigns, partnerships, sales support, exhibitions, and Japan-market expansion—from cultural narrative and PR to shipping, buyers, retail execution, and reporting." },
   { period: "2021–2023", title: "Parallax Network", role: "Head of Public Relations / Creative Team", text: "Led PR strategy, launch narratives, proposals, content, decks, and press materials across technology, entertainment, NFT, and creative-economy projects." },
-  { period: "2017", title: "SIDE Co., Ltd. · Tokyo Fashion Week projects", role: "Project Manager (relocated to Tokyo)", text: "Managed cross-border fashion projects across Asian Fashion Meets Tokyo and Fashion Hong Kong, coordinating designers, venues, shipping and imports, retail and pop-up operations, inventory, VIP events, and international customer engagement." },
+  { period: "2017", title: "SIDE Co., Ltd. · Fashion Week Tokyo projects", role: "Project Manager (relocated to Tokyo)", text: "Managed cross-border fashion projects across Asian Fashion Meets Tokyo and Fashion Hong Kong, coordinating designers, venues, shipping and imports, retail and pop-up operations, inventory, VIP events, and international customer engagement." },
   { period: "2015–2018", title: "ZeeMi · Zygma Organizer · 7Dimension", role: "Content Producer · Co-founder/CCO · Head of Creative", text: "Produced interactive livestream formats and led creative, commercial, and show delivery for exhibitions, roadshows, festivals, Korean-content programs, beauty brands, and corporate clients." },
   { period: "2012–Present", title: "Japanese Station", role: "Co-founder · Creative Director & Business Development", text: "Built a media and community platform into branded content, events, talent representation, sponsorship, business development, and original intellectual property including Hyper Wave Festival." },
   { period: "2011–2012", title: "Dentsu / JKT48", role: "Media Relations & Event Manager", text: "Managed media opportunities, appearances, events, production logistics, partner coordination, and Japanese-to-Indonesian lyric adaptation during JKT48’s formative first year, later serving as a judge for the televised second-generation audition.", textHighlights: ["Japanese-to-Indonesian lyric adaptation"] },

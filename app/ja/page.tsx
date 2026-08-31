@@ -21,12 +21,12 @@ export default function JapaneseHome() {
         <div className="eyebrow"><span>ジャカルタ首都圏 ↔ 東京</span><span>クリエイティブ戦略・アクティベーション · 統合マーケティング · リサーチ</span></div>
         <div className="heroStage">
           <div className="heroMessage">
-            <h1>インサイトを<br />アイデアへ。<br /><em>心が動く体験へ。</em></h1>
+            <h1>インサイト →<br />アイデア →<br /><em>心動く体験!</em></h1>
             <a className="roundLink" href="/ja/work" aria-label="実績を見る">→</a>
           </div>
           <div className="heroMobilePhoto" aria-hidden="true" />
           <figure className="heroPortrait">
-            <figcaption><strong>リニンタ　プラディザ</strong><span>分野を横断するストラテジスト、プロデューサー、インドネシアと日本をつなぐ専門家。15年以上にわたり、リサーチ、クリエイティブディレクション、パートナーシップ、複雑な現場実装をつないできました。</span></figcaption>
+            <figcaption><strong>Rinintha Pradiza</strong><span>リニンタ　プラディザは、分野を横断するストラテジスト、プロデューサー、インドネシアと日本をつなぐ専門家です。15年以上にわたり、リサーチ、クリエイティブディレクション、パートナーシップ、複雑な現場実装をつないできました。</span></figcaption>
           </figure>
         </div>
         <div className="marquee" aria-hidden="true"><span>リサーチ — 戦略 — ストーリーテリング — キャンペーン — 体験設計 — 文化翻訳 — リサーチ — 戦略 — ストーリーテリング — キャンペーン — 体験設計 — 文化翻訳 —</span></div>

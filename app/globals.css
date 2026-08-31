@@ -81,7 +81,8 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 
 .featuredGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .projectCard { min-height: 680px; display: grid; grid-template-rows: 45% 55%; overflow: hidden; }
-.projectCard:nth-child(3n + 1) { grid-column: 1 / -1; grid-template-columns: 1.08fr 0.92fr; grid-template-rows: none; min-height: 610px; }
+.projectCard.project-japanese-station-hyper-wave,
+.projectCard.project-side-tokyo { grid-column: 1 / -1; grid-template-columns: 1.08fr 0.92fr; grid-template-rows: none; min-height: 610px; }
 .projectImage { min-height: 0; overflow: hidden; }
 .projectImage img { transition: transform 0.7s ease; }
 .projectCard:hover .projectImage img { transform: scale(1.03); }
@@ -302,7 +303,8 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
   .proof { grid-template-columns: repeat(2, 1fr); }
   .proof > div:nth-child(2) { border-right: 0; }
   .proof > div:nth-child(-n + 2) { border-bottom: 1px solid var(--ink); }
-  .projectCard:nth-child(3n + 1) { grid-template-columns: 1fr; grid-template-rows: 45% 55%; }
+  .projectCard.project-japanese-station-hyper-wave,
+  .projectCard.project-side-tokyo { grid-template-columns: 1fr; grid-template-rows: 45% 55%; }
   .bioColumns { grid-template-columns: 1fr; gap: 20px; }
   .mediaLinkGrid { grid-template-columns: repeat(2, 1fr); }
   .offerGrid, .archiveGrid, .credibilityGrid { grid-template-columns: repeat(2, 1fr); }
@@ -315,7 +317,9 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 
 @media (max-width: 820px) {
   .featuredGrid, .consultTeaser, .workStory, .consultOffer { grid-template-columns: 1fr; }
-  .projectCard, .projectCard:nth-child(3n + 1) { grid-column: auto; min-height: 720px; }
+  .projectCard,
+  .projectCard.project-japanese-station-hyper-wave,
+  .projectCard.project-side-tokyo { grid-column: auto; min-height: 720px; }
   .profileTeaser, .profileStatement, .socialSection { grid-template-columns: 1fr; gap: 45px; }
   .profileImageLead { grid-template-columns: 1fr; }
   .profileMainImage { min-height: 680px; }
@@ -364,7 +368,9 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
   .homeTerritories, .featuredSection, .timelineSection, .mediaSection, .pressSection, .servicesSection, .archiveSection, .momentsSection, .consultCredibility, .consultProcess, .consultRequest { padding: 90px 4vw; }
   .sectionHead { grid-template-columns: 1fr; gap: 34px; }
   .featuredGrid { grid-template-columns: 1fr; }
-  .projectCard, .projectCard:nth-child(3n + 1) { min-height: 620px; grid-template-rows: 42% 58%; }
+  .projectCard,
+  .projectCard.project-japanese-station-hyper-wave,
+  .projectCard.project-side-tokyo { min-height: 620px; grid-template-rows: 42% 58%; }
   .projectCardCopy { padding: 27px; }
   .projectTopline { grid-template-columns: 30px 1fr; }
   .projectTopline span:last-child { display: none; }

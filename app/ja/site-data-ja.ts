@@ -30,7 +30,7 @@ const projectCopy: Record<string, Pick<FeaturedProject, "title" | "category" | "
     ],
   },
   "japan-wave": {
-    title: "Japan Wave Expo 2016",
+    title: "Japan Wave Expo",
     category: "ファッション · 展示会 · ビジネスマッチング",
     role: "クリエイティブ＆デリバリーリード",
     summary: "JETRO発のプラットフォームで、16社の日本企業とインドネシアのバイヤー、メディア、消費者をつなぐ企画・運営を統括しました。",
@@ -40,7 +40,7 @@ const projectCopy: Record<string, Pick<FeaturedProject, "title" | "category" | "
     ],
   },
   "k-content": {
-    title: "K-Content Expo Indonesia 2016",
+    title: "K-Content Expo Indonesia",
     category: "政府系コンテンツエキスポ · ジャカルタ",
     role: "プロジェクト責任者／ショーディレクター",
     summary: "KOCCAとBEKRAFによる文化コンテンツ展示会で、政府機関、出演者、ベンダー、現地19名のチームをまとめ、プロジェクトとショー全体の実施を指揮しました。",
@@ -77,7 +77,7 @@ const projectCopy: Record<string, Pick<FeaturedProject, "title" | "category" | "
     ],
   },
   "side-tokyo": {
-    title: "SIDE Co. / 東京ファッションウィーク関連プロジェクト",
+    title: "SIDE Co. / Fashion Week Tokyo関連プロジェクト",
     category: "Amazon Fashion Week TOKYO · Fashion Hong Kong 2018 S/S",
     role: "プロジェクトマネージャー（東京勤務）",
     summary: "東京を拠点に、デザイナー、会場、物流、ポップアップ、VIPイベントを調整し、ファッションウィーク、展示、小売プロジェクトを進行しました。",
@@ -99,7 +99,7 @@ export const timelineJa: TimelineItem[] = [
   { period: "2024–2025", title: "Asia Koshien / NB.ACADEMY", role: "NB.ACADEMY イベントオーガナイザー", text: "2024年Asia Koshien公式クロージング兼表彰イベントであるNo Border Asia Community VIPアフターパーティーを、NB.ACADEMYのイベントオーガナイザーとして担当。特別ゲスト、政府・スポーツ業界VIP、トークセッション、スポンサー、出展者、ネットワーキング、ハイブリッド参加を調整し、2025年ジャカルタプログラムと日本語でのコミュニティ発信にも携わりました。" },
   { period: "2023–2025", title: "Nila Baharuddin", role: "ブランドマーケティングマネージャー", text: "ブランド戦略、キャンペーン、パートナーシップ、販売支援、展示会、日本市場展開を統括。文化的なストーリー設計やPRから、輸送、バイヤー対応、小売実務、レポーティングまで一貫して担当しました。" },
   { period: "2021–2023", title: "Parallax Network", role: "PR責任者／クリエイティブチーム", text: "テクノロジー、エンターテインメント、NFT、クリエイティブエコノミー領域で、PR戦略、ローンチストーリー、提案書、コンテンツ、プレゼンテーション、プレス資料を担当しました。" },
-  { period: "2017", title: "SIDE Co., Ltd. · 東京ファッションウィーク関連プロジェクト", role: "プロジェクトマネージャー（東京へ転居）", text: "Asian Fashion Meets Tokyo、Fashion Hong Kongなどの国際ファッション案件で、デザイナー、会場、輸送・輸入、小売・ポップアップ運営、在庫、VIPイベント、海外顧客対応を調整しました。" },
+  { period: "2017", title: "SIDE Co., Ltd. · Fashion Week Tokyo関連プロジェクト", role: "プロジェクトマネージャー（東京へ転居）", text: "Asian Fashion Meets Tokyo、Fashion Hong Kongなどの国際ファッション案件で、デザイナー、会場、輸送・輸入、小売・ポップアップ運営、在庫、VIPイベント、海外顧客対応を調整しました。" },
   { period: "2015–2018", title: "ZeeMi · Zygma Organizer · 7Dimension", role: "コンテンツプロデューサー · 共同創業者／CCO · クリエイティブ責任者", text: "双方向ライブ配信フォーマットを制作し、展示会、ロードショー、フェスティバル、韓国コンテンツ、ビューティーブランド、法人案件で、企画・営業・ショー実施を統括しました。" },
   { period: "2012–現在", title: "Japanese Station", role: "共同創業者 · クリエイティブディレクター／事業開発", text: "メディアとコミュニティのプラットフォームを、ブランドコンテンツ、イベント、タレントマネジメント、スポンサーシップ、事業開発、そしてHyper Wave FestivalなどのオリジナルIPへ発展させました。" },
   { period: "2011–2012", title: "Dentsu / JKT48", role: "メディアリレーション＆イベントマネージャー", text: "JKT48の立ち上げ初年度に、メディア機会、出演、イベント、制作ロジスティクス、パートナー連携、日本語からインドネシア語への歌詞翻案を担当。その後、テレビ放送された第2期生オーディションの審査員も務めました。", textHighlights: ["日本語からインドネシア語への歌詞翻案"] },
