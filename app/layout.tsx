@@ -7,15 +7,15 @@ export async function generateMetadata(): Promise<Metadata> {
   const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "localhost:3000";
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.includes("localhost") ? "http" : "https");
   const base = new URL(`${protocol}://${host}`);
-  const title = "Rinintha Pradiza — Integrated Marketing & Creative Strategy";
-  const description = "Research-led campaigns, special projects, events, and Indonesia–Japan collaboration—from insight through execution.";
+  const title = "Rinintha Pradiza — Strategy, Projects & Indonesia–Japan";
+  const description = "Senior cross-disciplinary strategist, producer, and Indonesia–Japan specialist.";
   return {
     metadataBase: base,
     title: { default: title, template: "%s | Rinintha Pradiza" },
     description,
     icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
-    openGraph: { title, description, type: "website", url: base, images: [{ url: new URL("/og.png", base), width: 1728, height: 905, alt: "Rinintha Pradiza — Integrated Marketing and Creative Strategy" }] },
-    twitter: { card: "summary_large_image", title, description, images: [new URL("/og.png", base)] },
+    openGraph: { title, description, type: "website", url: base, images: [{ url: new URL("/og-rinintha-2026.png", base), width: 1732, height: 908, alt: "Rinintha Pradiza — Strategy, Projects, and Indonesia–Japan" }] },
+    twitter: { card: "summary_large_image", title, description, images: [new URL("/og-rinintha-2026.png", base)] },
   };
 }
 
