@@ -11,8 +11,9 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; font-size: 17px; }
-.localeJa { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", Arial, sans-serif; }
+.localeJa { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", Arial, sans-serif; line-break: strict; word-break: normal; overflow-wrap: normal; }
 .localeJa em { font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif; font-style: normal; }
+.jaLine { display: inline-block; white-space: nowrap; }
 a { color: inherit; text-decoration: none; }
 img { display: block; width: 100%; height: 100%; object-fit: cover; }
 em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
@@ -56,6 +57,7 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .heroMessage { position: relative; min-height: 670px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; overflow: hidden; padding: clamp(28px, 3vw, 48px); background: transparent; }
 .heroMobilePhoto { display: none; }
 .hero h1 { max-width: 1040px; margin: 0; font-size: clamp(72px, 9.2vw, 142px); font-weight: 900; letter-spacing: -0.08em; line-height: 0.82; }
+.localeJa .heroHeadlineJa { max-width: 100%; font-size: clamp(64px, 6.2vw, 100px); line-height: 0.92; letter-spacing: -0.07em; }
 .heroPortrait { min-height: 670px; margin: 0; display: flex; align-items: flex-end; background: transparent; color: var(--ink); }
 .heroPortrait figcaption { width: 100%; padding: clamp(28px, 3vw, 48px); }
 .heroPortrait figcaption strong { display: block; margin-bottom: 18px; font-size: clamp(32px, 3.6vw, 56px); line-height: 0.95; letter-spacing: -0.055em; }
@@ -76,6 +78,7 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .homeTerritories, .featuredSection, .timelineSection, .mediaSection, .pressSection, .servicesSection, .archiveSection { padding: 130px 4vw; }
 .sectionHead { display: grid; grid-template-columns: 1fr 2fr; align-items: start; margin-bottom: 75px; }
 .sectionHead h2, .consultTeaser h2, .socialSection h2, .servicesSection h2 { margin: 0; font-size: clamp(54px, 7.4vw, 110px); letter-spacing: -0.065em; line-height: 0.9; }
+.localeJa .sectionHead h2, .localeJa .consultTeaser h2 { font-size: clamp(48px, 4.7vw, 76px); line-height: 1; letter-spacing: -0.05em; }
 
 .homeTerritories { background: var(--soft); border-bottom: 1px solid var(--ink); }
 
@@ -131,6 +134,7 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 
 .profileTeaser, .profileStatement, .socialSection { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; padding: 140px 4vw; }
 .profileTeaser .sectionIntro { margin-bottom: 0; }
+.localeJa .profileTeaser .bigCopy { font-size: clamp(48px, 5vw, 78px); line-height: 1; letter-spacing: -0.05em; }
 
 .pageHero { min-height: 83vh; padding: 70px 4vw 80px; display: grid; grid-template-columns: 1fr 2fr; align-content: space-between; }
 .pageHero h1 { grid-column: 1 / -1; margin: 8vh 0 0; font-size: clamp(74px, 11vw, 170px); font-weight: 900; letter-spacing: -0.08em; line-height: 0.82; }
@@ -211,6 +215,9 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .workStoryCopy { padding: 50px 4vw; }
 .caseMeta { margin: 0 0 42px; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; }
 .workStory h2 { margin: 0 0 18px; font-size: clamp(48px, 5.8vw, 92px); line-height: 0.88; letter-spacing: -0.07em; }
+.localeJa .projectCard h3, .localeJa .workStory h2 { word-break: keep-all; overflow-wrap: normal; }
+.localeJa .projectCard h3 { font-size: clamp(42px, 4.6vw, 72px); line-height: 0.95; letter-spacing: -0.05em; }
+.localeJa .workStory h2 { font-size: clamp(44px, 4.6vw, 74px); line-height: 0.95; letter-spacing: -0.05em; }
 .storySections { margin-top: 45px; border-top: 1px solid currentColor; }
 .storySections > div { display: grid; grid-template-columns: 150px 1fr; gap: 25px; padding: 22px 0; border-bottom: 1px solid currentColor; }
 .storySections span { font-size: 9px; font-weight: 800; letter-spacing: 0.11em; text-transform: uppercase; }
@@ -357,6 +364,7 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
   .heroMessage { min-height: 500px; padding: 24px; background: transparent; }
   .heroMobilePhoto { display: block; width: 100%; aspect-ratio: 16 / 9; background: #efc4c8 url("/images/rini-nissin.jpg") 48% center / cover no-repeat; }
   .hero h1 { font-size: 19vw; }
+  .localeJa .heroHeadlineJa { font-size: clamp(36px, 11vw, 68px); line-height: 0.96; }
   .heroPortrait { min-height: 300px; }
   .heroPortrait figcaption { padding: 28px 24px; }
   .heroPortrait figcaption strong { font-size: 34px; }
@@ -367,6 +375,7 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
   .proof > div { min-height: 180px; gap: 36px; border-right: 0; border-bottom: 1px solid var(--ink); }
   .homeTerritories, .featuredSection, .timelineSection, .mediaSection, .pressSection, .servicesSection, .archiveSection, .momentsSection, .consultCredibility, .consultProcess, .consultRequest { padding: 90px 4vw; }
   .sectionHead { grid-template-columns: 1fr; gap: 34px; }
+  .localeJa .sectionHead h2, .localeJa .consultTeaser h2, .localeJa .profileTeaser .bigCopy { font-size: clamp(38px, 11vw, 52px); line-height: 1.03; }
   .featuredGrid { grid-template-columns: 1fr; }
   .projectCard,
   .projectCard.project-japanese-station-hyper-wave,

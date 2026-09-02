@@ -77,7 +77,7 @@ const projectCopy: Record<string, Pick<FeaturedProject, "title" | "category" | "
     ],
   },
   "side-tokyo": {
-    title: "SIDE Co. / Fashion Week Tokyo関連プロジェクト",
+    title: "SIDE Co. / Fashion Week Tokyo",
     category: "Amazon Fashion Week TOKYO · Fashion Hong Kong 2018 S/S",
     role: "プロジェクトマネージャー（東京勤務）",
     summary: "東京を拠点に、デザイナー、会場、物流、ポップアップ、VIPイベントを調整し、ファッションウィーク、展示、小売プロジェクトを進行しました。",
