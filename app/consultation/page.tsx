@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { PageHero, PageShell, SiteFooter } from "../components";
-import { email } from "../site-data";
 
 export const metadata: Metadata = {
   title: "Indonesia Market Entry Consultant for Japanese Companies",
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-const consultationMail = `mailto:${email}?subject=Indonesia%20Market%20Entry%20Strategy%20Call&body=Company%20or%20IP%3A%0AWebsite%3A%0AWhat%20are%20you%20considering%20doing%20in%20Indonesia%3F%3A%0AWhat%20stage%20are%20you%20currently%20at%3F%3A%0AYour%20biggest%20questions%20or%20concerns%3A%0AWhat%20would%20make%20this%20consultation%20useful%20for%20you%3F%3A%0APreferred%20timing%3A`;
+const consultationForm = "/submit";
 
 export default function ConsultationPage() {
   const serviceSchema = {
@@ -27,7 +26,11 @@ export default function ConsultationPage() {
     "@type": "Service",
     name: "Indonesia Market Entry Strategy Call",
     description: "A focused 60-minute Indonesia market entry consultation for Japanese entertainment, media, pop-culture, event, and lifestyle companies.",
-    provider: { "@type": "Person", name: "Rinintha Pradiza" },
+    provider: {
+      "@type": "Organization",
+      name: "PT Garda Citra Nusantara",
+      employee: { "@type": "Person", name: "Rinintha Pradiza" },
+    },
     areaServed: { "@type": "Country", name: "Indonesia" },
     audience: { "@type": "BusinessAudience", audienceType: "Japanese companies exploring the Indonesian market" },
     offers: { "@type": "Offer", price: "100", priceCurrency: "USD" },
@@ -48,14 +51,14 @@ export default function ConsultationPage() {
           <h2>Practical Indonesia market entry advice for the <em>decision in front of you.</em></h2>
           <p>This is not a generic introduction to the Indonesian market. Bring one real business, project, or IP question. Together, we will examine your assumptions, identify where local context matters, consider the most relevant market-entry and activation routes, and clarify what should happen next.</p>
         </div>
-        <div className="offerPrice"><strong>USD 100</strong><span>Introductory rate · 60 minutes</span><a className="pillButton lightButton" href={consultationMail}>Request a consultation ↗</a><small>Available in English or Indonesian</small></div>
+        <div className="offerPrice"><strong>USD 100</strong><span>Introductory rate · 60 minutes</span><a className="pillButton lightButton" href={consultationForm}>Request a consultation ↗</a><small>Available in English or Indonesian</small></div>
         <div className="offerGrid">
           <article><span>Best for</span><ul><li>Teams assessing whether Indonesia fits</li><li>Japanese entertainment and cultural IP</li><li>Media, events, lifestyle, and consumer-facing brands</li><li>Concepts that need meaningful localization</li><li>A specific decision that needs local context</li></ul></article>
           <article><span>What we can examine</span><ul><li>Audience and fan-community behavior</li><li>Positioning and cultural nuance</li><li>Local partnerships and stakeholder types</li><li>Media, event, activation, and community routes</li><li>Risks, assumptions, and questions to investigate next</li></ul></article>
           <article><span>What you receive</span><ul><li>Short pre-call questionnaire</li><li>60-minute private video call</li><li>Focused discussion around one primary brief</li><li>Concise written action summary</li><li>Clearer priorities and recommended next steps</li></ul></article>
           <article><span>What it is not</span><ul><li>A legal, tax, licensing, or regulatory consultation</li><li>A detailed quantitative market-sizing report</li><li>A full go-to-market strategy</li><li>Investment or financial due diligence</li><li>A guarantee of introductions or business outcomes</li></ul></article>
         </div>
-        <p className="offerNote">The USD 100 consultation is offered and invoiced directly by Rinintha Pradiza, with payment through PayPal after the request is accepted. The consultation provides practical commercial and cultural perspective based on professional experience. Where specialist legal, regulatory, financial, or technical advice is needed, those questions should be taken to the appropriate qualified adviser.</p>
+        <p className="offerNote">The USD 100 introductory advisory session is delivered personally by Rinintha Pradiza and contracted and invoiced through PT Garda Citra Nusantara. Payment instructions are provided after the request is accepted. The consultation provides practical commercial and cultural perspective based on professional experience. Where specialist legal, regulatory, financial, or technical advice is needed, those questions should be taken to the appropriate qualified adviser.</p>
       </section>
 
       <section className="consultCredibility" aria-labelledby="why-rinintha">
@@ -63,20 +66,20 @@ export default function ConsultationPage() {
         <div className="credibilityGrid">
           <article><span>01 · Entertainment localization</span><h3>JKT48</h3><p>Worked within the group&apos;s formative launch period across event and media relations, appearances, partner coordination, production logistics, and Japanese-to-Indonesian lyric adaptation.</p><a className="textLink" href="/work#jkt48">View related work →</a></article>
           <article><span>02 · Market-entry programming</span><h3>Japan Wave Expo</h3><p>Helped build a JETRO-initiated platform combining business matching, buyer and media engagement, test marketing, fashion showcases, and public programming for Japanese companies entering Indonesia.</p><a className="textLink" href="/work#japan-wave">View related work →</a></article>
-          <article><span>03 · Audience and partnership building</span><h3>Japanese Station</h3><p>Co-built a Japanese media and community platform into branded content, events, talent representation, sponsorship, research, partnerships, and original intellectual property.</p><a className="textLink" href="/work#japanese-station">View related work →</a></article>
+          <article><span>03 · Audience and partnership building</span><h3>Japanese Station</h3><p>Co-built a Japanese media and community platform into branded content, events, talent representation, sponsorship, research, partnerships, and original intellectual property.</p><a className="textLink" href="/work#japanese-station-hyper-wave">View related work →</a></article>
           <article><span>04 · Cross-border execution</span><h3>Indonesia ↔ Japan</h3><p>Experience spans strategy decks, production floors, live stages, exhibitions, buyer relations, PR, retail, and market expansion—connecting commercial intent with what audiences and partners actually experience.</p><a className="textLink" href="/profile">Read the career timeline →</a></article>
         </div>
       </section>
 
       <section className="consultProcess" aria-labelledby="consult-process">
-        <div className="sectionHead"><p className="sectionLabel">How it works</p><div><h2 id="consult-process">A small advisory engagement with a <em>clear outcome.</em></h2><p className="sectionIntro">The preparation keeps the conversation focused, so the hour is spent on your real decisions rather than introductions.</p></div></div>
-        <div className="processGrid"><article><span>01</span><h3>Share the context</h3><p>Send your company or IP, what you are considering in Indonesia, your current stage, and the questions you most need answered.</p></article><article><span>02</span><h3>Focus the call</h3><p>Rinintha reviews the brief, confirms whether the session is a good fit, and schedules a private 60-minute video call.</p></article><article><span>03</span><h3>Leave with direction</h3><p>After the call, receive a concise written summary of priorities, risks, useful next questions, and recommended actions.</p></article></div>
+        <div className="sectionHead"><p className="sectionLabel">How it works</p><div><h2 id="consult-process">A small advisory engagement with a <em>clear outcome.</em></h2><p className="sectionIntro">The request is reviewed before booking, keeping the hour focused on your real decision rather than introductions.</p></div></div>
+        <div className="processGrid"><article><span>01</span><h3>Share the context</h3><p>Submit your company or IP, what you are considering in Indonesia, your current stage, and the question you most need answered.</p></article><article><span>02</span><h3>Confirm the fit</h3><p>Rinintha reviews the request and responds within two business days. If the session is not the right fit, no invoice is issued.</p></article><article><span>03</span><h3>Invoice and schedule</h3><p>If accepted, receive an invoice from PT Garda Citra Nusantara, payment instructions, and a private scheduling link.</p></article><article><span>04</span><h3>Call and summary</h3><p>Meet for a private 60-minute video call, followed by a concise written action summary within two business days.</p></article></div>
       </section>
 
       <section className="consultRequest">
         <p className="sectionLabel">Request a consultation</p>
         <h2>Bring the question you cannot answer from <em>outside the market.</em></h2>
-        <div><p>Send a short brief first. Rinintha will confirm fit, scheduling, and personal PayPal payment details by email before the session.</p><p className="corporatePath">If the conversation develops into a larger strategy, research, activation, production, or Indonesia-based commercial engagement, the next phase may be contracted through PT Garda Citra Nusantara.</p><a className="pillButton" href={consultationMail}>Request a consultation ↗</a></div>
+        <div><p>Send a short brief first. Rinintha will review the request and confirm whether the session is the right fit within two business days.</p><p className="corporatePath">Please share only the context needed at this stage. Information submitted is treated with discretion and used only to assess and prepare for the consultation.</p><p className="corporatePath">A consultation can stand alone or become the first step toward a larger engagement. Further research, strategy, partnerships, activation, or implementation work is scoped separately through PT Garda Citra Nusantara.</p><a className="pillButton" href={consultationForm}>Open the request form ↗</a></div>
       </section>
       <SiteFooter />
     </PageShell>

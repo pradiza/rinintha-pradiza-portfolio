@@ -133,7 +133,7 @@ const featuredProjectsSource: FeaturedProject[] = [
     title: "Cecilia / Holywings Group",
     year: "2025–2026",
     category: "Hospitality · Ongoing brand ownership",
-    role: "Marketing Communication Strategist",
+    role: "Senior Marketing Communication Strategist",
     summary:
       "Owned Cecilia’s marketing direction, programs, and six-person team, linking brand positioning and audience activity with commercial performance.",
     image: "/images/cecilia-holywings.jpg",
@@ -142,7 +142,7 @@ const featuredProjectsSource: FeaturedProject[] = [
     imageHeight: 1600,
     tone: "ink",
     stats: [
-      { value: "Rp2.1B+", label: "monthly revenue surpassed" },
+      { value: "Rp2.1B+", label: "Cecilia monthly revenue" },
       { value: "30%+", label: "food contribution" },
     ],
   },
@@ -212,7 +212,7 @@ export type TimelineItem = {
 
 export const timeline: TimelineItem[] = [
   { period: "2026", title: "PT Garda Citra Nusantara", role: "Founder", text: "Established an independent Indonesian legal entity to support larger professional engagements and corporate collaborations across creative strategy, research, events, brand activations, media, and Indonesia–Japan projects." },
-  { period: "2025–2026", title: "Holywings Group", role: "Marketing Communication Strategist → Senior Creative Strategist", text: "Worked first as brand owner across Cecilia, H Social House, and H Bar Kuala Lumpur, then as an agency-side creative team head across hospitality and premium beverage accounts." },
+  { period: "2025–2026", title: "Holywings Group", role: "Senior Marketing Communication Strategist → Senior Creative Strategist", text: "From September 2025, led marketing communications for Cecilia, H Social Club, and H Bar Kuala Lumpur. From April 2026, moved into HWC (Holywings Creative) as Senior Creative Strategist, developing campaigns for external brands including Martell and Clase Azul." },
   { period: "2024–2025", title: "Asia Koshien / NB.ACADEMY", role: "Event Organizer for NB.ACADEMY · VIP Afterparty & Cross-Cultural Sports Program", text: "Served as NB.ACADEMY’s event organizer for the 2024 No Border Asia Community VIP afterparty at JS Luwansa—the official closing celebration and awards event for Asia Koshien—coordinating special guests, government and sports-industry VIPs, talk sessions, sponsors, exhibitors, networking, and hybrid participation; also contributed to the 2025 Jakarta program and Japanese-language community outreach materials." },
   { period: "2023–2025", title: "Nila Baharuddin", role: "Brand Marketing Manager", text: "Led brand strategy, campaigns, partnerships, sales support, exhibitions, and Japan-market expansion—from cultural narrative and PR to shipping, buyers, retail execution, and reporting." },
   { period: "2021–2023", title: "Parallax Network", role: "Head of Public Relations / Creative Team", text: "Led PR strategy, launch narratives, proposals, content, decks, and press materials across technology, entertainment, NFT, and creative-economy projects." },

@@ -26,7 +26,7 @@ export default function JapaneseHome() {
           </div>
           <div className="heroMobilePhoto" aria-hidden="true" />
           <figure className="heroPortrait">
-            <figcaption><strong>Rinintha Pradiza</strong><span>リニンタ　プラディザは、分野を横断するストラテジスト、プロデューサー、インドネシアと日本をつなぐ専門家です。15年以上にわたり、リサーチ、クリエイティブディレクション、パートナーシップ、複雑な現場実装をつないできました。</span></figcaption>
+            <figcaption><strong>Rinintha Pradiza</strong><span>リニンタ　プラディザは、領域横断型のストラテジスト／プロデューサーであり、インドネシアと日本をつなぐ実務家です。15年以上にわたり、リサーチ、クリエイティブディレクション、パートナーシップを、複雑なプロジェクトの実行へとつないできました。</span></figcaption>
           </figure>
         </div>
         <div className="marquee" aria-hidden="true"><span>リサーチ — 戦略 — ストーリーテリング — キャンペーン — 体験設計 — 文化翻訳 — リサーチ — 戦略 — ストーリーテリング — キャンペーン — 体験設計 — 文化翻訳 —</span></div>
@@ -40,12 +40,12 @@ export default function JapaneseHome() {
       </section>
 
       <section className="homeTerritories" aria-labelledby="territories-title-ja">
-        <div className="sectionHead"><p className="sectionLabel">提供価値の中心</p><div><h2 id="territories-title-ja"><span className="jaLine">領域を越える</span><wbr /><span className="jaLine">経験。</span><br /><em><span className="jaLine">明確な3つの軸。</span></em></h2><p className="sectionIntro">扱う業界は多岐にわたりますが、仕事の軸は、戦略、人、市場、実施を切り離さずに考える3つの領域にあります。</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">提供価値の中心</p><div><h2 id="territories-title-ja"><span className="jaLine">領域を越える経験。</span><br /><em><span className="jaLine">明確な3つの軸。</span></em></h2><p className="sectionIntro">扱う業界は多岐にわたりますが、仕事の軸は、戦略、人、市場、実施を切り離さずに考える3つの領域にあります。</p></div></div>
         <div className="serviceList">{homeTerritories.map((service) => <article key={service.no}><span>{service.no}</span><h3>{service.title}</h3><p>{service.text}</p></article>)}</div>
       </section>
 
       <section className="featuredSection" aria-labelledby="selected-work-title-ja">
-        <div className="sectionHead"><p className="sectionLabel">主な実績 / 01—08</p><div><h2 id="selected-work-title-ja"><span className="jaLine">8つの</span><wbr /><span className="jaLine">プロジェクト。</span><br /><em><span className="jaLine">異なる角度からの</span><wbr /><span className="jaLine">実証。</span></em></h2><p className="sectionIntro">戦略上のオーナーシップ、規模、事業成果、国際連携、そしてアイデアを実働するプロジェクトへ変える力を示す事例です。</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">主な実績 / 01—08</p><div><h2 id="selected-work-title-ja"><span className="jaLine jaLineMobileTight">8つのプロジェクト。</span><br /><em><span className="jaLine jaLineMobileTight">異なる角度からの実証。</span></em></h2><p className="sectionIntro">戦略上の責任範囲、規模、事業成果、国際連携、そしてアイデアを実際に動くプロジェクトへ落とし込む力を示す事例です。</p></div></div>
         <div className="featuredGrid">{featuredProjectsJa.map((project) => <ProjectCard key={project.id} project={project} locale="ja" />)}</div>
         <a className="pillButton" href="/ja/work">すべての実績を見る ↗</a>
       </section>
@@ -56,10 +56,10 @@ export default function JapaneseHome() {
       </section>
 
       <section className="consultTeaser">
-        <div><p className="sectionLabel">新サービス · 1対1コンサルテーション</p><h2><span className="jaLine">インドネシア</span><br /><span className="jaLine">市場へ、</span><br /><em><span className="jaLine">明確な視点を。</span></em></h2></div>
+        <div><p className="sectionLabel">新サービス · 1対1コンサルテーション</p><h2><span className="jaLine jaLineMobileTight">インドネシア市場へ、</span><br /><em><span className="jaLine">明確な視点を。</span></em></h2></div>
         <div className="consultTeaserCopy">
           <p>インドネシア進出を検討する日本のエンターテインメント、メディア、ポップカルチャー、イベント、ライフスタイル企業向けの、英語による60分の戦略セッションです。</p>
-          <p>オーディエンス、ポジショニング、現地パートナー、アクティベーション、文化的なニュアンス、参入ルートなど、実際の意思決定を一つ持ち込んでください。</p>
+          <p>オーディエンス、ポジショニング、現地パートナー、アクティベーション、文化的なニュアンス、参入ルートなど、具体的な意思決定を一つお持ちください。</p>
           <a className="pillButton lightButton" href="/ja/consultation">内容を確認する ↗</a>
         </div>
       </section>

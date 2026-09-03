@@ -44,8 +44,8 @@ const supportingLinks: Record<string, Array<{ label: string; href: string }>> = 
 const details: Record<string, { challenge: string; contribution: string; outcome: string }> = {
   "japanese-station-hyper-wave": {
     challenge: "オーディエンスと企業パートナーの双方に価値を提供できる日本文化プラットフォームを育て、さらに日本とインドネシアのアーティストを同じ舞台に迎える規模のオリジナル音楽イベントを実現すること。",
-    contribution: "Japanese Stationを共同創業し、クリエイティブディレクション、事業開発、スポンサーシップ、メディアパートナー、イベント、タレント育成、提案、広報窓口、オリジナルIPを担当。Hyper Wave Festivalでは、コンセプト、スポンサー向けストーリー、アーティスト対応、会場、クリエイティブ、エグゼクティブプロデュース、当日のショー運営までを統括しました。",
-    outcome: "Japanese Stationはコミュニティ運営のポータルから、メディア、タレント、キャンペーン、イベント、パートナーシップを扱う事業へ成長。Hyper Wave Festivalは2日間で5,000人以上を動員し、VAMPS、NIDJIを含む日本人アーティスト3組とインドネシアのバンド5組が出演しました。",
+    contribution: "Japanese Stationを共同創業し、クリエイティブディレクション、事業開発、スポンサーシップ、メディアパートナーシップ、イベント、タレント育成、提案書・ピッチ、広報窓口、オリジナルIPを担当。Hyper Wave Festivalでは、コンセプト、スポンサー向けストーリー、アーティスト対応、会場、クリエイティブ、エグゼクティブプロデュース、当日のショー運営までを統括しました。",
+    outcome: "Japanese Stationは日本文化のコミュニティメディアから、タレント、キャンペーン、イベント、パートナーシップまで扱う事業へ成長。Hyper Wave Festivalは2日間で5,000人以上を動員し、VAMPS、NIDJIを含む日本人アーティスト3組とインドネシアのバンド5組が出演しました。",
   },
   jkt48: {
     challenge: "インドネシアで急速に展開する新しい日本発エンターテインメントIPのために、安定したメディア、出演、イベント、制作運営の仕組みを立ち上げること。",
@@ -64,13 +64,13 @@ const details: Record<string, { challenge: string; contribution: string; outcome
   },
   "nila-baharuddin": {
     challenge: "インドネシア人デザイナーの文化的・商業的な存在感を、ギャラリー、展示会、百貨店という異なる日本の販売環境で構築すること。",
-    contribution: "ブランド戦略、文化的ストーリーテリング、生産・品質管理、価格・利益率、在庫、輸送、店頭ツール、KOL、PR、SNS、バイヤー対応、売場設営、販売支援、レポーティング、日本向けデジタル施策を統括しました。",
+    contribution: "ブランド戦略、文化的ストーリーテリング、生産・品質管理、価格・利益率、在庫、輸送、店頭ツール、KOL、PR、SNS、売場設営、販売支援、レポーティング、日本向けデジタル施策を統括しました。大丸東京店については、日本在住のコンサルタントによる紹介後、バイヤー対応を担い、2週間のポップアップ実現に向けた調整を進めました。",
     outcome: "FEELSEEN銀座からNEW ENERGY Tokyo、大丸東京店へ展開。銀座オープニングには100名以上が来場し、売上は324,400円。大丸東京店の2週間ポップアップでは40点を販売し、売上100万円を超え、バイヤーとの関係も強化しました。",
   },
   cecilia: {
     challenge: "既存のホスピタリティ施設に明確な市場ポジションを与え、単なるコンテンツカレンダーではなく、顧客行動を変える継続的なプログラムをつくること。",
     contribution: "6名のチームを率い、ブランドポジショニング、統合キャンペーン、コンテンツ、SNS、PR、KOL、パートナーシップ、販促、イベント、オーディエンスプログラム、成果分析を担当。Sunday Pilates、Business Brunch、Valentine、Ramadan、Easter、Earth Dayなどを企画しました。",
-    outcome: "インサイト、プログラム、マーケティング、事業成果をつなぐ再現可能な運営モデルを構築。期間中、月間売上は約21億ルピアを超え、フード売上が約30%以上を占めました。",
+    outcome: "インサイト、プログラム、マーケティング、事業成果をつなぐ再現可能な運営モデルを構築。期間中、月間売上は約21億ルピアを超え、フード売上が30%以上を占めました。",
   },
   shiseido: {
     challenge: "一つのグローバルビューティーブランド体験を、クリエイティブ、顧客導線、実施水準の一貫性を保ちながら、インドネシア4都市へ展開すること。",
@@ -87,7 +87,7 @@ const details: Record<string, { challenge: string; contribution: string; outcome
 const archiveItems = [
   { meta: "国際協力 · 2007–2011", title: "JICA 技術協力プロジェクト", text: "鉄道安全、航空事故調査、海上保安の分野で、リサーチ、翻訳、政府・民間関係者の調整、技術セミナー、視察、出張、国際ロジスティクスを担当。" },
   { meta: "広告映像制作 · 2011", title: "AOI Pro. / AOI Asia Indonesia", text: "TVCM、企業映像、JKT48関連制作で、リサーチ、キャスティング、ロケ地、予算、人員、ロジスティクス、制作準備を管理。" },
-  { meta: "市場調査 · 2019", title: "Project IA", text: "特定クライアント案件で、市場構造、ソーシャルリスニング、オーディエンス分析、イベント比較、ケース分析、実行可能な戦略提言を実施。" },
+  { meta: "クライアント向けリサーチ／アドバイザリー · 2019", title: "Project IA", text: "市場構造、ソーシャルリスニング、オーディエンス分析、イベント比較、ケース分析を行い、実行可能な戦略提言にまとめました。" },
   { meta: "PR・クリエイティブエコノミー · 2021–2023", title: "Parallax Network", text: "テクノロジー、エンターテインメント、NFT、クリエイティブエコノミー領域で、PR戦略、ローンチストーリー、提案書、プレスリリース、コンテンツを制作。" },
   { meta: "スポーツ・文化交流 · 2024–2025", title: "Asia Koshien / NB.ACADEMY", text: "NB.ACADEMYのVIPアフターパーティー兼クロージングイベントを担当し、特別ゲスト、政府・スポーツ業界VIP、トーク、スポンサー、出展者、ネットワーキングを調整。" },
   { meta: "体験型・一般向けイベント", title: "Cosmobeauté、AEON、ICC、POPCON", text: "消費者、エンターテインメント、クリエイティブ産業の現場で、SNSライブ制作、周年企画、コンベンション、フェス、ステージ進行、モデレーションを担当。" },
@@ -98,7 +98,7 @@ const archiveItems = [
 export default function JapaneseWorkPage() {
   return (
     <PageShell locale="ja">
-      <PageHero label="主な実績 / 8つの事例" title={<>戦略、人、市場、<br /><em>そして実施。</em></>} intro="オーナーシップ、規模、事業との関連性、関係者の複雑性、そして戦略と実行を往復する力を示す8つのプロジェクトです。" />
+      <PageHero label="主な実績 / 8つの事例" title={<><span className="jaLine">戦略、</span><wbr /><span className="jaLine">人、</span><wbr /><span className="jaLine">市場、</span><br /><em><span className="jaLine">そして実施。</span></em></>} intro="戦略上の責任範囲、規模、事業成果、関係者の多さ、そして戦略と実行を行き来する力を示す8つのプロジェクトです。" />
 
       <div className="workStories">
         {featuredProjectsJa.map((project) => {
@@ -127,7 +127,7 @@ export default function JapaneseWorkPage() {
       </div>
 
       <section className="archiveSection">
-        <div className="sectionHead"><p className="sectionLabel">8つの主要事例以外</p><div><h2>その他の仕事。<br /><em>経験の広がり。</em></h2><p className="sectionIntro">主要事例を補完するプロジェクトです。リサーチの規律、制作現場への理解、人前での進行、異文化間の実務など、ポートフォリオ全体を支える経験を示します。</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">8つの主要事例以外</p><div><h2><span className="jaLine">その他の仕事。</span><br /><em><span className="jaLine">経験の広がり。</span></em></h2><p className="sectionIntro">主要事例を補完するプロジェクトです。リサーチの規律、制作現場への理解、人前での進行、異文化間の実務など、ポートフォリオ全体を支える経験を示します。</p></div></div>
         <div className="archiveGrid">{archiveItems.map((item) => <article key={item.title}><span>{item.meta}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
       </section>
       <SiteFooter locale="ja" />

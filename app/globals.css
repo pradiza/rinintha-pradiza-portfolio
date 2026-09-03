@@ -14,6 +14,9 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: Aria
 .localeJa { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", Arial, sans-serif; line-break: strict; word-break: normal; overflow-wrap: normal; }
 .localeJa em { font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif; font-style: normal; }
 .jaLine { display: inline-block; white-space: nowrap; }
+@supports (word-break: auto-phrase) {
+  .localeJa h1, .localeJa h2, .localeJa h3 { word-break: auto-phrase; }
+}
 a { color: inherit; text-decoration: none; }
 img { display: block; width: 100%; height: 100%; object-fit: cover; }
 em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
@@ -260,7 +263,7 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .credibilityGrid p, .processGrid p { margin: 0; font-size: 16px; line-height: 1.55; }
 .credibilityGrid .textLink { margin-top: auto; }
 .consultProcess { background: var(--paper); }
-.processGrid { grid-template-columns: repeat(3, 1fr); }
+.processGrid { grid-template-columns: repeat(4, 1fr); }
 .processGrid article { min-height: 380px; }
 .processGrid article > span { color: var(--coral); }
 .consultRequest { display: grid; grid-template-columns: 0.75fr 1.45fr; gap: 50px; padding: 130px 4vw; background: var(--coral); }
@@ -268,6 +271,13 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .consultRequest > div { grid-column: 2; max-width: 690px; }
 .consultRequest > div p { margin: 0; font-size: 20px; line-height: 1.5; }
 .consultRequest .corporatePath { margin-top: 25px; padding-top: 25px; border-top: 1px solid rgba(15, 31, 26, 0.45); font-size: 16px; }
+
+.submitPage { min-height: calc(100svh - 96px); padding: 90px 4vw 50px; background: var(--paper); }
+.submitHeader { display: grid; grid-template-columns: 0.55fr 1.45fr; gap: 50px; align-items: start; }
+.submitHeader h1 { max-width: 1000px; margin: 0; font-size: clamp(54px, 7.2vw, 110px); line-height: 0.9; letter-spacing: -0.065em; }
+.submitHeader > div > p { max-width: 690px; margin: 28px 0 0; font-size: 19px; line-height: 1.55; }
+.tallyEmbedShell { max-width: 920px; margin: 64px auto 0; border-top: 1px solid var(--ink); }
+.tallyEmbedFrame { display: block; width: 100%; min-height: 1550px; border: 0; background: transparent; }
 
 .servicesSection { background: var(--paper); }
 .serviceList { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); border-left: 1px solid var(--ink); }
@@ -344,6 +354,7 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
   .heroMessage { min-height: 500px; }
   .heroPortrait { min-height: 320px; }
   .specialistCapabilities { grid-template-columns: 1fr; gap: 20px; }
+  .submitHeader { grid-template-columns: 1fr; gap: 34px; }
 }
 
 @media (max-width: 640px) {
@@ -376,6 +387,12 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
   .homeTerritories, .featuredSection, .timelineSection, .mediaSection, .pressSection, .servicesSection, .archiveSection, .momentsSection, .consultCredibility, .consultProcess, .consultRequest { padding: 90px 4vw; }
   .sectionHead { grid-template-columns: 1fr; gap: 34px; }
   .localeJa .sectionHead h2, .localeJa .consultTeaser h2, .localeJa .profileTeaser .bigCopy { font-size: clamp(38px, 11vw, 52px); line-height: 1.03; }
+  .localeJa .jaLineMobileTight { font-size: 0.82em; letter-spacing: -0.07em; }
+  .submitPage { padding: 70px 4vw 30px; }
+  .submitHeader h1 { font-size: clamp(40px, 12vw, 58px); line-height: 1; }
+  .submitHeader > div > p { font-size: 17px; }
+  .tallyEmbedShell { margin-top: 44px; }
+  .tallyEmbedFrame { min-height: 1850px; }
   .featuredGrid { grid-template-columns: 1fr; }
   .projectCard,
   .projectCard.project-japanese-station-hyper-wave,

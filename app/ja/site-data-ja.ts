@@ -25,7 +25,7 @@ const projectCopy: Record<string, Pick<FeaturedProject, "title" | "category" | "
     role: "メディアリレーション＆イベントマネージャー",
     summary: "JKT48の立ち上げ初年度に、メディア対応、出演、イベント、制作進行、メンバーサポート、日本語楽曲のインドネシア語への歌詞翻案を担当しました。",
     stats: [
-      { value: "約30", label: "週間出演依頼の検討数" },
+      { value: "約30", label: "1週間あたりの出演依頼" },
       { value: "約60", label: "サポートしたタレント数" },
     ],
   },
@@ -50,7 +50,7 @@ const projectCopy: Record<string, Pick<FeaturedProject, "title" | "category" | "
     title: "Nila Baharuddin",
     category: "ファッション · 日本市場開拓",
     role: "ブランドマーケティングマネージャー",
-    summary: "銀座のFEELSEEN、NEW ENERGY Tokyo、大丸東京店へと展開し、ブランド戦略から小売現場まで、Nila Baharuddinの日本市場開拓をリードしました。",
+    summary: "銀座のFEELSEEN、NEW ENERGY Tokyo、大丸東京店へと展開し、ブランド戦略から小売現場まで、Nila Baharuddinの日本市場開拓を主導しました。",
     stats: [
       { value: "100+", label: "FEELSEENオープニング来場者" },
       { value: "¥1M+", label: "大丸東京店での売上" },
@@ -59,7 +59,7 @@ const projectCopy: Record<string, Pick<FeaturedProject, "title" | "category" | "
   cecilia: {
     title: "Cecilia / Holywings Group",
     category: "ホスピタリティ · 継続的なブランド運営",
-    role: "マーケティングコミュニケーションストラテジスト",
+    role: "シニアマーケティングコミュニケーションストラテジスト",
     summary: "Ceciliaのマーケティング方針、プログラム、6名のチームを統括し、ブランドポジショニングと顧客行動を事業成果につなげました。",
     stats: [
       { value: "Rp2.1B+", label: "月間売上" },
@@ -80,7 +80,7 @@ const projectCopy: Record<string, Pick<FeaturedProject, "title" | "category" | "
     title: "SIDE Co. / Fashion Week Tokyo",
     category: "Amazon Fashion Week TOKYO · Fashion Hong Kong 2018 S/S",
     role: "プロジェクトマネージャー（東京勤務）",
-    summary: "東京を拠点に、デザイナー、会場、物流、ポップアップ、VIPイベントを調整し、ファッションウィーク、展示、小売プロジェクトを進行しました。",
+    summary: "東京を拠点に、デザイナー、会場、物流、ポップアップ、VIPイベントを調整し、ファッションウィーク、展示、小売プロジェクトを推進しました。",
     stats: [
       { value: "Tokyo", label: "日本市場での実務経験" },
       { value: "3", label: "ファッションウィーク関連案件" },
@@ -95,14 +95,14 @@ export const featuredProjectsJa: FeaturedProject[] = featuredProjectsEn.map((pro
 
 export const timelineJa: TimelineItem[] = [
   { period: "2026", title: "PT Garda Citra Nusantara", role: "創業者", text: "クリエイティブ戦略、リサーチ、イベント、ブランドアクティベーション、メディア、インドネシアと日本を結ぶプロジェクトなど、より大規模な業務や法人間連携を支えるため、インドネシアで法人を設立。" },
-  { period: "2025–2026", title: "Holywings Group", role: "マーケティングコミュニケーションストラテジスト → シニアクリエイティブストラテジスト", text: "Cecilia、H Social House、H Bar Kuala Lumpurのブランド担当を経て、ホスピタリティおよびプレミアム飲料ブランドを担う社内エージェンシー側のクリエイティブチーム責任者を務めました。" },
+  { period: "2025–2026", title: "Holywings Group", role: "シニアマーケティングコミュニケーションストラテジスト → シニアクリエイティブストラテジスト", text: "2025年9月より、Cecilia、H Social Club、H Bar Kuala Lumpurのマーケティングコミュニケーションを担当。2026年4月よりHWC（Holywings Creative）のシニアクリエイティブストラテジストとして、Martell、Clase Azulなど外部ブランドのキャンペーンを企画・実施しました。" },
   { period: "2024–2025", title: "Asia Koshien / NB.ACADEMY", role: "NB.ACADEMY イベントオーガナイザー", text: "2024年Asia Koshien公式クロージング兼表彰イベントであるNo Border Asia Community VIPアフターパーティーを、NB.ACADEMYのイベントオーガナイザーとして担当。特別ゲスト、政府・スポーツ業界VIP、トークセッション、スポンサー、出展者、ネットワーキング、ハイブリッド参加を調整し、2025年ジャカルタプログラムと日本語でのコミュニティ発信にも携わりました。" },
   { period: "2023–2025", title: "Nila Baharuddin", role: "ブランドマーケティングマネージャー", text: "ブランド戦略、キャンペーン、パートナーシップ、販売支援、展示会、日本市場展開を統括。文化的なストーリー設計やPRから、輸送、バイヤー対応、小売実務、レポーティングまで一貫して担当しました。" },
   { period: "2021–2023", title: "Parallax Network", role: "PR責任者／クリエイティブチーム", text: "テクノロジー、エンターテインメント、NFT、クリエイティブエコノミー領域で、PR戦略、ローンチストーリー、提案書、コンテンツ、プレゼンテーション、プレス資料を担当しました。" },
   { period: "2017", title: "SIDE Co., Ltd. · Fashion Week Tokyo関連プロジェクト", role: "プロジェクトマネージャー（東京へ転居）", text: "Asian Fashion Meets Tokyo、Fashion Hong Kongなどの国際ファッション案件で、デザイナー、会場、輸送・輸入、小売・ポップアップ運営、在庫、VIPイベント、海外顧客対応を調整しました。" },
-  { period: "2015–2018", title: "ZeeMi · Zygma Organizer · 7Dimension", role: "コンテンツプロデューサー · 共同創業者／CCO · クリエイティブ責任者", text: "双方向ライブ配信フォーマットを制作し、展示会、ロードショー、フェスティバル、韓国コンテンツ、ビューティーブランド、法人案件で、企画・営業・ショー実施を統括しました。" },
+  { period: "2015–2018", title: "ZeeMi · Zygma Organizer · 7Dimension", role: "コンテンツプロデューサー · 共同創業者／CCO · クリエイティブ責任者", text: "双方向ライブ配信フォーマットを制作し、展示会、ロードショー、フェスティバル、韓国コンテンツ、ビューティーブランド、法人案件で、企画、営業、ショーの実施を統括しました。" },
   { period: "2012–現在", title: "Japanese Station", role: "共同創業者 · クリエイティブディレクター／事業開発", text: "メディアとコミュニティのプラットフォームを、ブランドコンテンツ、イベント、タレントマネジメント、スポンサーシップ、事業開発、そしてHyper Wave FestivalなどのオリジナルIPへ発展させました。" },
-  { period: "2011–2012", title: "Dentsu / JKT48", role: "メディアリレーション＆イベントマネージャー", text: "JKT48の立ち上げ初年度に、メディア機会、出演、イベント、制作ロジスティクス、パートナー連携、日本語からインドネシア語への歌詞翻案を担当。その後、テレビ放送された第2期生オーディションの審査員も務めました。", textHighlights: ["日本語からインドネシア語への歌詞翻案"] },
+  { period: "2011–2012", title: "Dentsu / JKT48", role: "メディアリレーション＆イベントマネージャー", text: "JKT48の立ち上げ初年度に、メディア対応、出演、イベント、制作ロジスティクス、パートナー連携、日本語からインドネシア語への歌詞翻案を担当。その後、テレビ放送された第2期生オーディションの審査員も務めました。", textHighlights: ["日本語からインドネシア語への歌詞翻案"] },
   { period: "2011", title: "AOI Pro. / AOI Asia Indonesia", role: "プロダクションマネージャー", text: "ケーシー・ストーナー出演のHonda CBR150R TVCM、三菱東京UFJ銀行の企業映像、JKT48のTVCM・ミュージックビデオにおいて、リサーチ、スタッフ編成、キャスティング、ロケ地、予算、制作準備を担当しました。" },
   { period: "2008–2013", title: "Go Raikon／インディペンデント音楽プロジェクト", role: "創業者 · イベントプロデューサー · タレントマネージャー", text: "Nihon no Matsuri、Little Tokyo Ennichisai、CLAS:H、日イ友好ファッションショーなど、日本のポップカルチャーを扱う初期の企画を展開。On! Project、Honeybeat、Proudly Presentsでは、スケジュール、広報、スタイリング、メディア、物販、収支、オリジナル楽曲を管理しました。" },
   { period: "2007–2011", title: "国際協力機構（JICA）", role: "プロジェクト秘書 · 技術協力3案件", text: "鉄道安全、航空事故調査、海上保安の技術協力で、リサーチ、翻訳、ロジスティクス、関係者調整、セミナー、現地視察を支援しました。" },
@@ -154,7 +154,7 @@ export const projectPressJa = translateNotes(projectPressEn, [
 export const servicesJa = [
   { no: "01", title: "戦略・リサーチ", text: "市場・オーディエンス調査、ポジショニング、キャンペーン・ブランド戦略、競合環境、PR方針、パートナーシップ設計。意思決定に必要な論点に絞って整理します。" },
   { no: "02", title: "プロジェクト・体験設計", text: "キャンペーン、イベント、展示会、フェス、ポップアップ、ブランドコンテンツ、特別企画をシニアレベルでリード。企画と事業ストーリーから、予算、チーム、ベンダー、実施までつなぎます。" },
-  { no: "03", title: "インドネシア ↔ 日本", text: "市場参入の視点、文化・オーディエンス理解、ローカライゼーション、パートナー候補整理、バイヤー・メディア対応、国際連携。日本からインドネシアへ、またはインドネシアから日本へ進む案件を実務面から支援します。" },
+  { no: "03", title: "インドネシア ↔ 日本", text: "市場参入の視点、文化・オーディエンス理解、ローカライゼーション、パートナー候補の整理、バイヤー・メディア対応、国際連携。日本からインドネシアへ、またはインドネシアから日本へ進出する案件を実務面から支援します。" },
 ];
 
 export const specialistCapabilitiesJa = [

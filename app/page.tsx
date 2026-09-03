@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <PageShell>
       <header className="hero">
-        <div className="eyebrow"><span>Greater Jakarta ↔ Tokyo</span><span>Creative strategy &amp; activation · Integrated marketing · Research</span></div>
+        <div className="eyebrow"><span>Greater Jakarta ↔ Tokyo</span><span>For brands and Japanese IP entering Indonesia—and teams working across both markets</span></div>
         <div className="heroStage">
           <div className="heroMessage">
             <h1>Insight →<br />Ideas →<br /><em>Impact!</em></h1>

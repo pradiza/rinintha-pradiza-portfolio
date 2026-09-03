@@ -64,13 +64,13 @@ const details: Record<string, { challenge: string; contribution: string; outcome
   },
   "nila-baharuddin": {
     challenge: "Build an Indonesian designer’s commercial and cultural presence in Japan across gallery, trade-fair, and department-store environments.",
-    contribution: "Led brand strategy, cultural storytelling, production and quality control, pricing and margins, inventory, shipping, retail materials, KOL coordination, PR, social content, buyer relations, store setup, sales support, reporting, and Japan-facing digital work.",
+    contribution: "Led brand strategy, cultural storytelling, production and quality control, pricing and margins, inventory, shipping, retail materials, KOL coordination, PR, social content, store setup, sales support, reporting, and Japan-facing digital work. Following an introduction by a Japan-based consultant, managed the Daimaru buyer relationship and helped develop the two-week Tokyo pop-up.",
     outcome: "The program progressed from FEELSEEN Ginza to NEW ENERGY Tokyo and Daimaru Tokyo. The Ginza opening welcomed 100+ guests and generated ¥324,400 in sales; the two-week Daimaru pop-up sold 40 units and surpassed ¥1 million in retail sales while strengthening buyer relationships.",
   },
   cecilia: {
     challenge: "Give an established hospitality venue a clearer market position and an ongoing program that could shape audience behavior, not simply fill a content calendar.",
-    contribution: "Owned brand positioning, integrated campaigns, content, social media, PR, KOLs, partnerships, promotions, events, audience programming, and performance analysis while leading a six-person team. Programs included Sunday Pilates, Business Brunch, Valentine, Ramadan, Easter, and Earth Day activity.",
-    outcome: "The work established a repeatable link between insight, programming, marketing, and commercial performance. During the period, monthly revenue surpassed approximately Rp2.1 billion, with food contributing around 30% or more.",
+    contribution: "As Senior Marketing Communication Strategist within a wider Holywings Group remit covering Cecilia, H Social Club, and H Bar Kuala Lumpur, owned Cecilia’s brand positioning, integrated campaigns, content, social media, PR, KOLs, partnerships, promotions, events, audience programming, and performance analysis while leading a six-person team. Programs included Sunday Pilates, Business Brunch, Valentine, Ramadan, Easter, and Earth Day activity.",
+    outcome: "During the period, Cecilia’s monthly venue revenue surpassed approximately Rp2.1 billion, with food contributing around 30% or more. This was a wider operational result supported by Rinintha’s responsibility for marketing strategy, audience programming, campaigns, and a six-person team.",
   },
   shiseido: {
     challenge: "Carry one global beauty-brand experience across four Indonesian cities without losing consistency in the creative idea, consumer journey, or delivery standard.",
@@ -87,7 +87,7 @@ const details: Record<string, { challenge: string; contribution: string; outcome
 const archiveItems = [
   { meta: "International cooperation · 2007–2011", title: "JICA technical-cooperation projects", text: "Research, translation, government and private-sector coordination, technical seminars, site visits, travel, and international logistics across railway safety, aircraft-accident investigation, and maritime security." },
   { meta: "Commercial production · 2011", title: "AOI Pro. / AOI Asia Indonesia", text: "Production management across research, casting, locations, budgets, staffing, logistics, and preparation for television commercials, corporate film, and JKT48 productions." },
-  { meta: "Market research · 2019", title: "Project IA", text: "Market landscaping, social listening, audience profiling, event comparison, case-study analysis, and practical strategic recommendations for a named client project." },
+  { meta: "Client research & advisory · 2019", title: "Project IA", text: "Delivered a research and advisory engagement covering market landscaping, social listening, audience profiling, event comparison, case-study analysis, and practical strategic recommendations." },
   { meta: "PR & creative economy · 2021–2023", title: "Parallax Network", text: "PR strategy, launch narratives, decks, proposals, press releases, and content for technology, entertainment, NFT, and creative-economy projects." },
   { meta: "Sports & cultural exchange · 2024–2025", title: "Asia Koshien / NB.ACADEMY", text: "Event organizer for NB.ACADEMY’s VIP afterparty and closing celebration, coordinating special guests, government and sports-industry VIPs, talk sessions, sponsors, exhibitors, and networking." },
   { meta: "Experiential & public events", title: "Cosmobeauté, AEON, ICC & POPCON", text: "Live social-media production, anniversary programming, convention and festival work, stage delivery, and moderation across consumer, entertainment, and creative-industry environments." },
