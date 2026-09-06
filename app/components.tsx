@@ -54,12 +54,12 @@ export function ProjectCard({ project, locale = "en" }: Readonly<{ project: Feat
   const headlineStat = project.stats?.slice(0, 1);
 
   return (
-    <article className={`projectCard project-${project.id} tone-${project.tone}`}>
+    <article className={`projectCard project-${project.id} tone-${project.tone}`} id={project.id}>
       {project.image ? <div className="projectImage"><Image src={project.image} alt={project.imageAlt ?? ""} width={project.imageWidth ?? 1200} height={project.imageHeight ?? 800} sizes="(max-width: 820px) 100vw, 50vw" /></div> : <div className="projectNumberVisual" aria-label="Project scale">{headlineStat?.map((stat) => <div key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div>}
       <div className="projectCardCopy">
         <div className="projectTopline"><span>{project.no}</span><span>{project.category}</span><span>{project.year}</span></div>
         <h3>{project.title}</h3><p className="projectRole">{project.role}</p><p><ProjectSummary project={project} /></p>
-        {project.image && headlineStat ? <div className="projectStats">{headlineStat.map((stat) => <div key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div> : null}
+        {project.image && headlineStat ? <div className="projectStats" id={`${project.id}-stats`}>{headlineStat.map((stat) => <div key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div> : null}
         <a className="textLink" href={`${locale === "ja" ? "/ja" : ""}/work#${project.id}`}>{locale === "ja" ? "事例を見る" : "View the story"} →</a>
       </div>
     </article>

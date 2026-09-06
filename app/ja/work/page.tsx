@@ -120,7 +120,7 @@ export default function JapaneseWorkPage() {
                 {project.secondaryImage ? <Image src={project.secondaryImage} alt={project.secondaryImageAlt ?? ""} width={project.secondaryImageWidth ?? 900} height={project.secondaryImageHeight ?? 900} sizes="(max-width: 820px) 100vw, 25vw" /> : null}
                 {project.tertiaryImage ? <Image src={project.tertiaryImage} alt={project.tertiaryImageAlt ?? ""} width={project.tertiaryImageWidth ?? 900} height={project.tertiaryImageHeight ?? 900} sizes="(max-width: 820px) 100vw, 25vw" /> : null}
               </div>
-              <div className="workStoryCopy">
+              <div className="workStoryCopy" id={`${project.id}-copy`}>
                 <p className="caseMeta">{project.no} · {project.category} · {project.year}</p>
                 <h2>{project.title}</h2>
                 <p className="projectRole">{project.role}</p>
