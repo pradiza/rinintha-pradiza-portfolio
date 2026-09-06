@@ -5,7 +5,7 @@ import { featuredProjects } from "../site-data";
 
 export const metadata: Metadata = {
   title: "Selected Work",
-  description: "Eight flagship projects by Rinintha Pradiza across strategy, entertainment, international events, market entry, experiential marketing, hospitality, and Indonesia–Japan work.",
+  description: "Nine flagship projects by Rinintha Pradiza across strategy, entertainment, international events, market entry, experiential marketing, hospitality, sport, and Indonesia–Japan work.",
   alternates: { canonical: "/work", languages: { en: "/work", ja: "/ja/work" } },
 };
 
@@ -38,6 +38,11 @@ const supportingLinks: Record<string, Array<{ label: string; href: string }>> = 
     { label: "Asian Fashion Meets Tokyo · Thailand", href: "https://rakutenfashionweektokyo.com/en/brands/detail/asian-fashion-meets-tokyo-thailand-2018ss/" },
     { label: "Asian Fashion Meets Tokyo · Philippines", href: "https://rakutenfashionweektokyo.com/en/brands/detail/asian-fashion-meets-tokyo-philippines-2018ss/" },
     { label: "Fashion Hong Kong", href: "https://rakutenfashionweektokyo.com/en/brands/detail/fashion-hong-kong/" },
+  ],
+  "nb-academy-asia-community": [
+    { label: "Read the 2024 NB.ACADEMY report", href: "https://prtimes.jp/main/html/rd/p/000000035.000109248.html" },
+    { label: "Read the 2025 NB.ACADEMY report", href: "https://prtimes.jp/main/html/rd/p/000000068.000109248.html" },
+    { label: "Visit NB.ACADEMY", href: "https://nbacademy.jp/" },
   ],
 };
 
@@ -82,6 +87,11 @@ const details: Record<string, { challenge: string; contribution: string; outcome
     contribution: "Managed designers, schedules, venues, shipping and imports, inventory, retail operations, pop-ups, VIP events, international customer engagement, and on-site teams across Asian Fashion Meets Tokyo, Fashion Hong Kong, Destination Tokyo, Laforet Harajuku, and the Philippine Design Exhibition.",
     outcome: "Delivered cross-border fashion work from inside the Japanese market, coordinating runway, exhibition, and retail-facing activity across multiple brands and national delegations. The experience provides direct operational grounding for later Indonesia–Japan strategy and market-development work.",
   },
+  "nb-academy-asia-community": {
+    challenge: "Create a meaningful community layer around Asia Koshien—one that could connect the sporting program with sponsors, partners, speakers, volunteers, and participants from Indonesia, Japan, and across Asia.",
+    contribution: "Produced the 2024 Asia Koshien closing event and afterparty and the 2025 ASIA COMMUNITY talk and networking program in Jakarta. The work covered program flow, speakers and guests, sponsors and stakeholders, venue delivery, and cross-cultural coordination.",
+    outcome: "The 2024 closing event brought together approximately 600 athletes, coaches, volunteers, partners, and Japanese sponsor companies. The 2025 talk and networking program welcomed approximately 150 participants from sports, entertainment, healthcare, and business, creating connections that extended beyond baseball.",
+  },
 };
 
 const archiveItems = [
@@ -89,8 +99,7 @@ const archiveItems = [
   { meta: "Commercial production · 2011", title: "AOI Pro. / AOI Asia Indonesia", text: "Production management across research, casting, locations, budgets, staffing, logistics, and preparation for television commercials, corporate film, and JKT48 productions." },
   { meta: "Client research & advisory · 2019", title: "Project IA", text: "Delivered a research and advisory engagement covering market landscaping, social listening, audience profiling, event comparison, case-study analysis, and practical strategic recommendations." },
   { meta: "PR & creative economy · 2021–2023", title: "Parallax Network", text: "PR strategy, launch narratives, decks, proposals, press releases, and content for technology, entertainment, NFT, and creative-economy projects." },
-  { meta: "Sports & cultural exchange · 2024–2025", title: "Asia Koshien / NB.ACADEMY", text: "Event organizer for NB.ACADEMY’s VIP afterparty and closing celebration, coordinating special guests, government and sports-industry VIPs, talk sessions, sponsors, exhibitors, and networking." },
-  { meta: "Experiential & public events", title: "Cosmobeauté, AEON, ICC & POPCON", text: "Live social-media production, anniversary programming, convention and festival work, stage delivery, and moderation across consumer, entertainment, and creative-industry environments." },
+  { meta: "Experiential & public events", title: "Cosmobeauté, AEON, Indonesia Comic Con & POPCON", text: "Live social-media production, anniversary programming, convention and festival work, stage delivery, and moderation across consumer, entertainment, and creative-industry environments." },
   { meta: "Japanese pop-culture foundations", title: "Go Raikon, Ennichisai & CLAS:H", text: "Community building, event creation, stage programming, cosplay competition development, sponsorship, creative direction, and MC work across the early growth of Japanese pop culture in Indonesia." },
   { meta: "Talent, formats & localization", title: "On! Project, Honeybeat, ZeeMi & selected translation", text: "Talent management, interactive live formats, original content, performance development, Japanese-to-Indonesian localization, singable lyric adaptation, and selected English–Indonesian translation." },
 ];
@@ -99,9 +108,9 @@ export default function WorkPage() {
   return (
     <PageShell>
       <PageHero
-        label="Selected work / Eight flagship cases"
+        label="Selected work / Nine flagship cases"
         title={<>Strategy, people,<br />markets &amp; <em>delivery.</em></>}
-        intro="Eight projects selected for ownership, scale, commercial relevance, stakeholder complexity, and what they reveal about working across strategy and execution."
+        intro="Nine projects selected for ownership, scale, commercial relevance, stakeholder complexity, and what they reveal about working across strategy and execution."
       />
 
       <div className="workStories">
@@ -110,13 +119,14 @@ export default function WorkPage() {
           const links = supportingLinks[project.id] ?? [];
           return (
             <section className={`workStory tone-${project.tone}`} id={project.id} key={project.id}>
-              <div className={`workStoryVisual${project.secondaryImage ? " doubleVisual" : ""}`}>
+              <div className={`workStoryVisual${project.tertiaryImage ? " tripleVisual" : project.secondaryImage ? " doubleVisual" : ""}`}>
                 {project.image ? (
                   <Image src={project.image} alt={project.imageAlt ?? ""} width={project.imageWidth ?? 1200} height={project.imageHeight ?? 800} sizes="(max-width: 820px) 100vw, 50vw" />
                 ) : (
                   <div className="projectNumberVisual">{project.stats?.map((stat) => <div key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div>
                 )}
                 {project.secondaryImage ? <Image src={project.secondaryImage} alt={project.secondaryImageAlt ?? ""} width={project.secondaryImageWidth ?? 900} height={project.secondaryImageHeight ?? 900} sizes="(max-width: 820px) 100vw, 25vw" /> : null}
+                {project.tertiaryImage ? <Image src={project.tertiaryImage} alt={project.tertiaryImageAlt ?? ""} width={project.tertiaryImageWidth ?? 900} height={project.tertiaryImageHeight ?? 900} sizes="(max-width: 820px) 100vw, 25vw" /> : null}
               </div>
               <div className="workStoryCopy">
                 <p className="caseMeta">{project.no} · {project.category} · {project.year}</p>
@@ -135,7 +145,7 @@ export default function WorkPage() {
       </div>
 
       <section className="archiveSection">
-        <div className="sectionHead"><p className="sectionLabel">Beyond the flagship eight</p><div><h2>Additional work.<br /><em>Wider experience.</em></h2><p className="sectionIntro">These projects broaden the record without competing with the eight flagship cases. Together they show the research discipline, production fluency, public-facing experience, and cross-cultural work behind the main portfolio.</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">Beyond the flagship nine</p><div><h2>Additional work.<br /><em>Wider experience.</em></h2><p className="sectionIntro">These projects broaden the record without competing with the nine flagship cases. Together they show the research discipline, production fluency, public-facing experience, and cross-cultural work behind the main portfolio.</p></div></div>
         <div className="archiveGrid">{archiveItems.map((item) => <article key={item.title}><span>{item.meta}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
       </section>
       <SiteFooter />

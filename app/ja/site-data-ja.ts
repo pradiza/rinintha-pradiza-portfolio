@@ -86,6 +86,16 @@ const projectCopy: Record<string, Pick<FeaturedProject, "title" | "category" | "
       { value: "3", label: "ファッションウィーク関連案件" },
     ],
   },
+  "nb-academy-asia-community": {
+    title: "NB.ACADEMY / ASIA COMMUNITY",
+    category: "スポーツ · 国際交流 · イベント制作",
+    role: "イベントオーガナイザー／プロデューサー",
+    summary: "Asia Koshienを軸に、ジャカルタで2年にわたりコミュニティイベントを制作。選手、指導者、スポンサー、ボランティア、各分野の登壇者を、トーク、表彰、交流の場でつなぎました。",
+    stats: [
+      { value: "約600名", label: "2024年クロージングイベント" },
+      { value: "約150名", label: "2025年トーク・交流会" },
+    ],
+  },
 };
 
 export const featuredProjectsJa: FeaturedProject[] = featuredProjectsEn.map((project) => ({
@@ -96,7 +106,7 @@ export const featuredProjectsJa: FeaturedProject[] = featuredProjectsEn.map((pro
 export const timelineJa: TimelineItem[] = [
   { period: "2026", title: "PT Garda Citra Nusantara", role: "創業者", text: "クリエイティブ戦略、リサーチ、イベント、ブランドアクティベーション、メディア、インドネシアと日本を結ぶプロジェクトなど、より大規模な業務や法人間連携を支えるため、インドネシアで法人を設立。" },
   { period: "2025–2026", title: "Holywings Group", role: "シニアマーケティングコミュニケーションストラテジスト → シニアクリエイティブストラテジスト", text: "2025年9月より、Cecilia、H Social Club、H Bar Kuala Lumpurのマーケティングコミュニケーションを担当。2026年4月よりHWC（Holywings Creative）のシニアクリエイティブストラテジストとして、Martell、Clase Azulなど外部ブランドのキャンペーンを企画・実施しました。" },
-  { period: "2024–2025", title: "Asia Koshien / NB.ACADEMY", role: "NB.ACADEMY イベントオーガナイザー", text: "2024年Asia Koshien公式クロージング兼表彰イベントであるNo Border Asia Community VIPアフターパーティーを、NB.ACADEMYのイベントオーガナイザーとして担当。特別ゲスト、政府・スポーツ業界VIP、トークセッション、スポンサー、出展者、ネットワーキング、ハイブリッド参加を調整し、2025年ジャカルタプログラムと日本語でのコミュニティ発信にも携わりました。" },
+  { period: "2024–2025", title: "Asia Koshien / NB.ACADEMY", role: "イベントオーガナイザー／プロデューサー", text: "2024年は選手、指導者、ボランティア、パートナー、スポンサーなど約600名が集うAsia Koshienのクロージングイベント兼アフターパーティーを制作。2025年はスポーツ、エンターテインメント、ヘルスケア、ビジネスの各分野から約150名を迎えたASIA COMMUNITYのトークセッションと交流会を制作しました。" },
   { period: "2023–2025", title: "Nila Baharuddin", role: "ブランドマーケティングマネージャー", text: "ブランド戦略、キャンペーン、パートナーシップ、販売支援、展示会、日本市場展開を統括。文化的なストーリー設計やPRから、輸送、バイヤー対応、小売実務、レポーティングまで一貫して担当しました。" },
   { period: "2021–2023", title: "Parallax Network", role: "PR責任者／クリエイティブチーム", text: "テクノロジー、エンターテインメント、NFT、クリエイティブエコノミー領域で、PR戦略、ローンチストーリー、提案書、コンテンツ、プレゼンテーション、プレス資料を担当しました。" },
   { period: "2017", title: "SIDE Co., Ltd. · Fashion Week Tokyo関連プロジェクト", role: "プロジェクトマネージャー（東京へ転居）", text: "Asian Fashion Meets Tokyo、Fashion Hong Kongなどの国際ファッション案件で、デザイナー、会場、輸送・輸入、小売・ポップアップ運営、在庫、VIPイベント、海外顧客対応を調整しました。" },

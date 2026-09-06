@@ -5,7 +5,7 @@ import { featuredProjectsJa } from "../site-data-ja";
 
 export const metadata: Metadata = {
   title: "実績",
-  description: "戦略、エンターテインメント、国際イベント、市場参入、体験型マーケティング、ホスピタリティ、インドネシアと日本を結ぶ8つの主要事例。",
+  description: "戦略、エンターテインメント、国際イベント、市場参入、体験型マーケティング、ホスピタリティ、スポーツ、インドネシアと日本を結ぶ9つの主要事例。",
   alternates: { canonical: "/ja/work", languages: { en: "/work", ja: "/ja/work" } },
 };
 
@@ -38,6 +38,11 @@ const supportingLinks: Record<string, Array<{ label: string; href: string }>> = 
     { label: "Asian Fashion Meets Tokyo · Thailand", href: "https://rakutenfashionweektokyo.com/en/brands/detail/asian-fashion-meets-tokyo-thailand-2018ss/" },
     { label: "Asian Fashion Meets Tokyo · Philippines", href: "https://rakutenfashionweektokyo.com/en/brands/detail/asian-fashion-meets-tokyo-philippines-2018ss/" },
     { label: "Fashion Hong Kong", href: "https://rakutenfashionweektokyo.com/en/brands/detail/fashion-hong-kong/" },
+  ],
+  "nb-academy-asia-community": [
+    { label: "2024年 NB.ACADEMY公式レポート", href: "https://prtimes.jp/main/html/rd/p/000000035.000109248.html" },
+    { label: "2025年 NB.ACADEMY公式レポート", href: "https://prtimes.jp/main/html/rd/p/000000068.000109248.html" },
+    { label: "NB.ACADEMY公式サイト", href: "https://nbacademy.jp/" },
   ],
 };
 
@@ -82,6 +87,11 @@ const details: Record<string, { challenge: string; contribution: string; outcome
     contribution: "Asian Fashion Meets Tokyo、Fashion Hong Kong、Destination Tokyo、ラフォーレ原宿、GOOD DESIGN MarunouchiでのPhilippine Design Exhibitionにおいて、デザイナー、スケジュール、会場、輸送・輸入、在庫、小売運営、ポップアップ、VIPイベント、海外顧客対応、現場チームを管理しました。",
     outcome: "日本市場の現場で、複数ブランドと各国代表団のランウェイ、展示、小売施策を調整。この直接的な実務経験が、その後のインドネシアと日本を結ぶ戦略・市場開拓の基盤となっています。",
   },
+  "nb-academy-asia-community": {
+    challenge: "Asia Koshienの競技プログラムを起点に、スポンサー、パートナー、登壇者、ボランティア、そしてインドネシア、日本、アジア各地の参加者がつながるコミュニティの場をつくること。",
+    contribution: "ジャカルタで、2024年のAsia Koshienクロージングイベント兼アフターパーティーと、2025年のASIA COMMUNITYトークセッション・交流会を制作。プログラム進行、登壇者・ゲスト対応、スポンサー・関係者調整、会場運営、異文化間のコミュニケーションを担いました。",
+    outcome: "2024年のクロージングイベントには、選手、指導者、ボランティア、パートナー、日本のスポンサー企業など約600名が参加。2025年のトークセッション・交流会には、スポーツ、エンターテインメント、ヘルスケア、ビジネスの各分野から約150名が集まり、野球の枠を越えた新たなつながりが生まれました。",
+  },
 };
 
 const archiveItems = [
@@ -89,8 +99,7 @@ const archiveItems = [
   { meta: "広告映像制作 · 2011", title: "AOI Pro. / AOI Asia Indonesia", text: "TVCM、企業映像、JKT48関連制作で、リサーチ、キャスティング、ロケ地、予算、人員、ロジスティクス、制作準備を管理。" },
   { meta: "クライアント向けリサーチ／アドバイザリー · 2019", title: "Project IA", text: "市場構造、ソーシャルリスニング、オーディエンス分析、イベント比較、ケース分析を行い、実行可能な戦略提言にまとめました。" },
   { meta: "PR・クリエイティブエコノミー · 2021–2023", title: "Parallax Network", text: "テクノロジー、エンターテインメント、NFT、クリエイティブエコノミー領域で、PR戦略、ローンチストーリー、提案書、プレスリリース、コンテンツを制作。" },
-  { meta: "スポーツ・文化交流 · 2024–2025", title: "Asia Koshien / NB.ACADEMY", text: "NB.ACADEMYのVIPアフターパーティー兼クロージングイベントを担当し、特別ゲスト、政府・スポーツ業界VIP、トーク、スポンサー、出展者、ネットワーキングを調整。" },
-  { meta: "体験型・一般向けイベント", title: "Cosmobeauté、AEON、ICC、POPCON", text: "消費者、エンターテインメント、クリエイティブ産業の現場で、SNSライブ制作、周年企画、コンベンション、フェス、ステージ進行、モデレーションを担当。" },
+  { meta: "体験型・一般向けイベント", title: "Cosmobeauté、AEON、Indonesia Comic Con、POPCON", text: "消費者、エンターテインメント、クリエイティブ産業の現場で、SNSライブ制作、周年企画、コンベンション、フェス、ステージ進行、モデレーションを担当。" },
   { meta: "日本ポップカルチャーの基盤づくり", title: "Go Raikon、縁日祭、CLAS:H", text: "インドネシアにおける日本ポップカルチャーの初期成長期に、コミュニティ形成、イベント企画、ステージ構成、コスプレ大会、スポンサー、クリエイティブディレクション、MCを担当。" },
   { meta: "タレント・フォーマット・ローカライゼーション", title: "On! Project、Honeybeat、ZeeMi、翻訳案件", text: "タレントマネジメント、双方向ライブ、オリジナルコンテンツ、パフォーマンス開発、日本語からインドネシア語へのローカライゼーション、歌詞翻案、英語・インドネシア語翻訳。" },
 ];
@@ -98,7 +107,7 @@ const archiveItems = [
 export default function JapaneseWorkPage() {
   return (
     <PageShell locale="ja">
-      <PageHero label="主な実績 / 8つの事例" title={<><span className="jaLine">戦略、</span><wbr /><span className="jaLine">人、</span><wbr /><span className="jaLine">市場、</span><br /><em><span className="jaLine">そして実施。</span></em></>} intro="戦略上の責任範囲、規模、事業成果、関係者の多さ、そして戦略と実行を行き来する力を示す8つのプロジェクトです。" />
+      <PageHero label="主な実績 / 9つの事例" title={<><span className="jaLine">戦略、</span><wbr /><span className="jaLine">人、</span><wbr /><span className="jaLine">市場、</span><br /><em><span className="jaLine">そして実施。</span></em></>} intro="戦略上の責任範囲、規模、事業成果、関係者の多さ、そして戦略と実行を行き来する力を示す9つのプロジェクトです。" />
 
       <div className="workStories">
         {featuredProjectsJa.map((project) => {
@@ -106,9 +115,10 @@ export default function JapaneseWorkPage() {
           const links = supportingLinks[project.id] ?? [];
           return (
             <section className={`workStory tone-${project.tone}`} id={project.id} key={project.id}>
-              <div className={`workStoryVisual${project.secondaryImage ? " doubleVisual" : ""}`}>
+              <div className={`workStoryVisual${project.tertiaryImage ? " tripleVisual" : project.secondaryImage ? " doubleVisual" : ""}`}>
                 {project.image ? <Image src={project.image} alt={project.imageAlt ?? ""} width={project.imageWidth ?? 1200} height={project.imageHeight ?? 800} sizes="(max-width: 820px) 100vw, 50vw" /> : <div className="projectNumberVisual">{project.stats?.map((stat) => <div key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div>}
                 {project.secondaryImage ? <Image src={project.secondaryImage} alt={project.secondaryImageAlt ?? ""} width={project.secondaryImageWidth ?? 900} height={project.secondaryImageHeight ?? 900} sizes="(max-width: 820px) 100vw, 25vw" /> : null}
+                {project.tertiaryImage ? <Image src={project.tertiaryImage} alt={project.tertiaryImageAlt ?? ""} width={project.tertiaryImageWidth ?? 900} height={project.tertiaryImageHeight ?? 900} sizes="(max-width: 820px) 100vw, 25vw" /> : null}
               </div>
               <div className="workStoryCopy">
                 <p className="caseMeta">{project.no} · {project.category} · {project.year}</p>
@@ -127,7 +137,7 @@ export default function JapaneseWorkPage() {
       </div>
 
       <section className="archiveSection">
-        <div className="sectionHead"><p className="sectionLabel">8つの主要事例以外</p><div><h2><span className="jaLine">その他の仕事。</span><br /><em><span className="jaLine">経験の広がり。</span></em></h2><p className="sectionIntro">主要事例を補完するプロジェクトです。リサーチの規律、制作現場への理解、人前での進行、異文化間の実務など、ポートフォリオ全体を支える経験を示します。</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">9つの主要事例以外</p><div><h2><span className="jaLine">その他の仕事。</span><br /><em><span className="jaLine">経験の広がり。</span></em></h2><p className="sectionIntro">主要事例を補完するプロジェクトです。リサーチの規律、制作現場への理解、人前での進行、異文化間の実務など、ポートフォリオ全体を支える経験を示します。</p></div></div>
         <div className="archiveGrid">{archiveItems.map((item) => <article key={item.title}><span>{item.meta}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
       </section>
       <SiteFooter locale="ja" />

@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       <section className="featuredSection" aria-labelledby="selected-work-title">
-        <div className="sectionHead"><p className="sectionLabel">Selected work / 01—08</p><div><h2 id="selected-work-title">Eight projects.<br /><em>Different kinds of proof.</em></h2><p className="sectionIntro">Strategic ownership, scale, commercial outcomes, international coordination, and the ability to move from an idea into a working project.</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">Selected work / 01—09</p><div><h2 id="selected-work-title">Nine projects.<br /><em>Different kinds of proof.</em></h2><p className="sectionIntro">Strategic ownership, scale, commercial outcomes, international coordination, and the ability to move from an idea into a working project.</p></div></div>
         <div className="featuredGrid">{featuredProjects.map((project) => <ProjectCard key={project.id} project={project} />)}</div>
         <a className="pillButton" href="/work">Explore all selected work ↗</a>
       </section>

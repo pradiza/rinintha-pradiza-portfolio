@@ -45,7 +45,7 @@ export default function JapaneseHome() {
       </section>
 
       <section className="featuredSection" aria-labelledby="selected-work-title-ja">
-        <div className="sectionHead"><p className="sectionLabel">主な実績 / 01—08</p><div><h2 id="selected-work-title-ja"><span className="jaLine jaLineMobileTight">8つのプロジェクト。</span><br /><em><span className="jaLine jaLineMobileTight">異なる角度からの実証。</span></em></h2><p className="sectionIntro">戦略上の責任範囲、規模、事業成果、国際連携、そしてアイデアを実際に動くプロジェクトへ落とし込む力を示す事例です。</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">主な実績 / 01—09</p><div><h2 id="selected-work-title-ja"><span className="jaLine jaLineMobileTight">9つのプロジェクト。</span><br /><em><span className="jaLine jaLineMobileTight">異なる角度からの実証。</span></em></h2><p className="sectionIntro">戦略上の責任範囲、規模、事業成果、国際連携、そしてアイデアを実際に動くプロジェクトへ落とし込む力を示す事例です。</p></div></div>
         <div className="featuredGrid">{featuredProjectsJa.map((project) => <ProjectCard key={project.id} project={project} locale="ja" />)}</div>
         <a className="pillButton" href="/ja/work">すべての実績を見る ↗</a>
       </section>
