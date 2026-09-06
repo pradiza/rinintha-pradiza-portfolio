@@ -78,7 +78,7 @@ export default function ConsultationPage() {
 
       <section className="consultRequest">
         <p className="sectionLabel">Request a consultation</p>
-        <h2>Bring the question you cannot answer from <em>outside the market.</em></h2>
+        <h2>Make your decision <em>with a clearer view of the market.</em></h2>
         <div><p>Send a short brief first. Rinintha will review the request and confirm whether the session is the right fit within two business days.</p><p className="corporatePath">Please share only the context needed at this stage. Information submitted is treated with discretion and used only to assess and prepare for the consultation.</p><p className="corporatePath">A consultation can stand alone or become the first step toward a larger engagement. Further research, strategy, partnerships, activation, or implementation work is scoped separately through PT Garda Citra Nusantara.</p><a className="pillButton" href={consultationForm}>Open the request form ↗</a></div>
       </section>
       <SiteFooter />

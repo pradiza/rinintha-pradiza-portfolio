@@ -51,7 +51,7 @@ export default function JapaneseProfilePage() {
 
       <section className="timelineSection" aria-labelledby="timeline-title-ja">
         <div className="sectionHead"><p className="sectionLabel">キャリアタイムライン</p><div><h2 id="timeline-title-ja"><span className="jaLine">マイクから、</span><br /><em><span className="jaLine">市場戦略へ。</span></em></h2><p className="sectionIntro">それぞれの時期に何を学び、次の仕事へどうつながったのか。キャリア全体の流れをご紹介します。</p></div></div>
-        <div className="timeline">{timelineJa.map((item) => <article key={`${item.period}-${item.title}`}><span className="timelinePeriod">{item.period}</span><div><h3>{item.title}</h3><p className="timelineRole">{item.role}</p><p><TimelineText item={item} /></p></div></article>)}</div>
+        <div className="timeline">{timelineJa.map((item) => <article key={`${item.period}-${item.title}`}><span className="timelinePeriod">{item.period}</span><div><h3>{item.title}</h3><p className="timelineRole">{item.role}</p><p><TimelineText item={item} /></p>{item.title === "PT Garda Citra Nusantara" ? <a className="textLink timelineCompanyLink" href="/ja/company">法人情報を見る →</a> : null}</div></article>)}</div>
         <a className="pillButton" href="https://www.linkedin.com/in/rinintha-pradiza/" target="_blank" rel="noreferrer">LinkedInを見る ↗</a>
       </section>
 

@@ -28,6 +28,7 @@ export type FeaturedProject = {
   tertiaryImageAlt?: string;
   tertiaryImageWidth?: number;
   tertiaryImageHeight?: number;
+  videoId?: string;
   tone: "ink" | "lime" | "coral" | "teal" | "paper" | "soft";
   stats?: Array<{ value: string; label: string }>;
 };
@@ -209,6 +210,7 @@ const featuredProjectsSource: FeaturedProject[] = [
     tertiaryImageAlt: "A speaker addressing the NB.ACADEMY Asia Koshien community event in Jakarta",
     tertiaryImageWidth: 1600,
     tertiaryImageHeight: 1066,
+    videoId: "re-eezV_QBE",
     tone: "teal",
     stats: [
       { value: "≈600", label: "2024 closing-event participants" },

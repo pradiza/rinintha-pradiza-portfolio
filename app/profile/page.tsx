@@ -57,7 +57,7 @@ export default function ProfilePage() {
 
       <section className="timelineSection" aria-labelledby="timeline-title">
         <div className="sectionHead"><p className="sectionLabel">Career timeline</p><div><h2 id="timeline-title">From a microphone<br />to <em>market strategy.</em></h2><p className="sectionIntro">The longer story behind the work and the connective tissue between each chapter.</p></div></div>
-        <div className="timeline">{timeline.map((item) => <article key={`${item.period}-${item.title}`}><span className="timelinePeriod">{item.period}</span><div><h3>{item.title}</h3><p className="timelineRole">{item.role}</p><p><TimelineText item={item} /></p></div></article>)}</div>
+        <div className="timeline">{timeline.map((item) => <article key={`${item.period}-${item.title}`}><span className="timelinePeriod">{item.period}</span><div><h3>{item.title}</h3><p className="timelineRole">{item.role}</p><p><TimelineText item={item} /></p>{item.title === "PT Garda Citra Nusantara" ? <a className="textLink timelineCompanyLink" href="/company">About the company →</a> : null}</div></article>)}</div>
         <a className="pillButton" href="https://www.linkedin.com/in/rinintha-pradiza/" target="_blank" rel="noreferrer">View LinkedIn profile ↗</a>
       </section>
 

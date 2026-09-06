@@ -73,7 +73,7 @@ export default function JapaneseConsultationPage() {
 
       <section className="consultRequest">
         <p className="sectionLabel">コンサルテーションのお申し込み</p>
-        <h2><span className="jaLine">市場の外からは</span><wbr /><span className="jaLine">見えにくい問いを、</span><wbr /><em><span className="jaLine">お持ちください。</span></em></h2>
+        <h2><span className="jaLine">いま向き合う意思決定に、</span><wbr /><em><span className="jaLine">市場の視点を。</span></em></h2>
         <div><p>まず簡潔な概要をお送りください。リニンタが内容を確認し、セッションとの適合性を2営業日以内にご連絡します。</p><p className="corporatePath">現段階では必要な範囲のみご記入ください。送信内容は、相談との適合性の確認および事前準備にのみ使用します。</p><p className="corporatePath">コンサルテーションは単独で完結する場合も、より大きなプロジェクトの第一歩となる場合もあります。その後のリサーチ、戦略、パートナーシップ、アクティベーション、実施支援は、PT Garda Citra Nusantaraを通じて別途ご提案します。</p><a className="pillButton" href={consultationForm}>申込フォームを開く ↗</a></div>
       </section>
       <SiteFooter locale="ja" />
