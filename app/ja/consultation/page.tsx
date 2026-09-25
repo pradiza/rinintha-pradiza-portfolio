@@ -24,7 +24,7 @@ export default function JapaneseConsultationPage() {
     provider: {
       "@type": "Organization",
       name: "PT Garda Citra Nusantara",
-      employee: { "@type": "Person", name: "リニンタ　プラディザ" },
+      employee: { "@type": "Person", name: "リニンザ　プラディザ" },
     },
     areaServed: { "@type": "Country", name: "Indonesia" },
     audience: { "@type": "BusinessAudience", audienceType: "インドネシア市場を検討する日本企業" },
@@ -37,7 +37,7 @@ export default function JapaneseConsultationPage() {
       <PageHero
         label="日本企業向けインドネシア市場参入コンサルテーション"
         title={<><span className="jaLine jaLineMobileTight">インドネシア市場へ、</span><wbr /><em><span className="jaLine">明確な視点を。</span></em></>}
-        intro="インドネシア進出を検討する日本のエンターテインメント、メディア、ポップカルチャー、イベント、ライフスタイル企業向け。リニンタ　プラディザとの60分の市場参入に関する戦略セッションです。"
+        intro="インドネシア進出を検討する日本のエンターテインメント、メディア、ポップカルチャー、イベント、ライフスタイル企業向け。リニンザ　プラディザとの60分の市場参入に関する戦略セッションです。"
       />
 
       <section className="consultOffer consultationScope" id="scope">
@@ -53,11 +53,11 @@ export default function JapaneseConsultationPage() {
           <article><span>提供内容</span><ul><li>事前の簡易質問票</li><li>60分の非公開ビデオ通話</li><li>一つの主要テーマに絞ったディスカッション</li><li>簡潔なアクションサマリー</li><li>優先順位と次のステップの整理</li></ul></article>
           <article><span>対象外</span><ul><li>法務、税務、許認可、規制に関する相談</li><li>詳細な定量市場規模レポート</li><li>完全なGo-to-Market戦略の策定</li><li>投資・財務デューデリジェンス</li><li>紹介や事業成果の保証</li></ul></article>
         </div>
-        <p className="offerNote">USD 100のコンサルテーションは、リニンタ　プラディザが担当し、PT Garda Citra Nusantaraとの契約・請求により提供します。お支払い方法は、相談内容をお受けした後にご案内します。内容は実務経験に基づく、事業面・文化面からの実践的な視点の提供です。法務、規制、財務、技術の専門的助言が必要な場合は、各分野の有資格者へご相談ください。</p>
+        <p className="offerNote">USD 100のコンサルテーションは、リニンザ　プラディザが担当し、PT Garda Citra Nusantaraとの契約・請求により提供します。お支払い方法は、相談内容をお受けした後にご案内します。内容は実務経験に基づく、事業面・文化面からの実践的な視点の提供です。法務、規制、財務、技術の専門的助言が必要な場合は、各分野の有資格者へご相談ください。</p>
       </section>
 
       <section className="consultCredibility" aria-labelledby="why-rinintha-ja">
-        <div className="sectionHead"><p className="sectionLabel">リニンタに相談する理由</p><div><h2 id="why-rinintha-ja"><span className="jaLine">両市場で培った、</span><wbr /><em><span className="jaLine">実務経験。</span></em></h2><p className="sectionIntro">日本発IPのローカライゼーション、JETRO関連の市場参入企画、メディア運営とコミュニティ形成、ブランドアクティベーション、インドネシアと日本の消費者向けプロジェクトで培った経験をもとにお話しします。</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">リニンザに相談する理由</p><div><h2 id="why-rinintha-ja"><span className="jaLine">両市場で培った、</span><wbr /><em><span className="jaLine">実務経験。</span></em></h2><p className="sectionIntro">日本発IPのローカライゼーション、JETRO関連の市場参入企画、メディア運営とコミュニティ形成、ブランドアクティベーション、インドネシアと日本の消費者向けプロジェクトで培った経験をもとにお話しします。</p></div></div>
         <div className="credibilityGrid">
           <article><span>01 · エンターテインメントのローカライゼーション</span><h3>JKT48</h3><p>立ち上げ初期に、イベント・メディアリレーション、出演、パートナー調整、制作ロジスティクス、日本語からインドネシア語への歌詞翻案を担当。</p><a className="textLink" href="/ja/work#jkt48">関連実績を見る →</a></article>
           <article><span>02 · 市場参入プログラム</span><h3>Japan Wave Expo</h3><p>JETRO発の企画で、日本企業向けのビジネスマッチング、バイヤー・メディア対応、テストマーケティング、ファッションショー、一般向けプログラムを組み合わせ、市場との接点を設計。</p><a className="textLink" href="/ja/work#japan-wave">関連実績を見る →</a></article>
@@ -68,13 +68,13 @@ export default function JapaneseConsultationPage() {
 
       <section className="consultProcess" aria-labelledby="consult-process-ja">
         <div className="sectionHead"><p className="sectionLabel">進め方</p><div><h2 id="consult-process-ja"><span className="jaLine">小さな相談でも、</span><wbr /><em><span className="jaLine">明確な成果を。</span></em></h2><p className="sectionIntro">事前準備によって紹介に時間を使わず、60分を具体的な意思決定に充てられるようにします。</p></div></div>
-        <div className="processGrid"><article><span>01</span><h3>背景を共有</h3><p>会社またはIP、インドネシアで検討していること、現在の段階、最も整理したい問いをお送りください。</p></article><article><span>02</span><h3>適合性を確認</h3><p>リニンタが内容を確認し、2営業日以内にご連絡します。相談内容をお受けできない場合、請求は発生しません。</p></article><article><span>03</span><h3>請求・日程調整</h3><p>お受けできる場合は、PT Garda Citra Nusantaraからの請求書、お支払い方法、非公開の予約リンクをご案内します。</p></article><article><span>04</span><h3>セッション・要点整理</h3><p>60分の非公開ビデオ通話を実施し、2営業日以内に簡潔なアクションサマリーをお送りします。</p></article></div>
+        <div className="processGrid"><article><span>01</span><h3>背景を共有</h3><p>会社またはIP、インドネシアで検討していること、現在の段階、最も整理したい問いをお送りください。</p></article><article><span>02</span><h3>適合性を確認</h3><p>リニンザが内容を確認し、2営業日以内にご連絡します。相談内容をお受けできない場合、請求は発生しません。</p></article><article><span>03</span><h3>請求・日程調整</h3><p>お受けできる場合は、PT Garda Citra Nusantaraからの請求書、お支払い方法、非公開の予約リンクをご案内します。</p></article><article><span>04</span><h3>セッション・要点整理</h3><p>60分の非公開ビデオ通話を実施し、2営業日以内に簡潔なアクションサマリーをお送りします。</p></article></div>
       </section>
 
       <section className="consultRequest">
         <p className="sectionLabel">コンサルテーションのお申し込み</p>
         <h2><span className="jaLine">いま向き合う意思決定に、</span><wbr /><em><span className="jaLine">市場の視点を。</span></em></h2>
-        <div><p>まず簡潔な概要をお送りください。リニンタが内容を確認し、セッションとの適合性を2営業日以内にご連絡します。</p><p className="corporatePath">現段階では必要な範囲のみご記入ください。送信内容は、相談との適合性の確認および事前準備にのみ使用します。</p><p className="corporatePath">コンサルテーションは単独で完結する場合も、より大きなプロジェクトの第一歩となる場合もあります。その後のリサーチ、戦略、パートナーシップ、アクティベーション、実施支援は、PT Garda Citra Nusantaraを通じて別途ご提案します。</p><a className="pillButton" href={consultationForm}>申込フォームを開く ↗</a></div>
+        <div><p>まず簡潔な概要をお送りください。リニンザが内容を確認し、セッションとの適合性を2営業日以内にご連絡します。</p><p className="corporatePath">現段階では必要な範囲のみご記入ください。送信内容は、相談との適合性の確認および事前準備にのみ使用します。</p><p className="corporatePath">コンサルテーションは単独で完結する場合も、より大きなプロジェクトの第一歩となる場合もあります。その後のリサーチ、戦略、パートナーシップ、アクティベーション、実施支援は、PT Garda Citra Nusantaraを通じて別途ご提案します。</p><a className="pillButton" href={consultationForm}>申込フォームを開く ↗</a></div>
       </section>
       <SiteFooter locale="ja" />
     </PageShell>

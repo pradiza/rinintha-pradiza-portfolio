@@ -4,7 +4,7 @@ import { TallyForm } from "../../tally-form";
 
 export const metadata: Metadata = {
   title: "コンサルテーションのお申し込み",
-  description: "リニンタ・プラディザとのインドネシア市場参入コンサルテーション申込フォーム。",
+  description: "リニンザ　プラディザとのインドネシア市場参入コンサルテーション申込フォーム。",
   alternates: { canonical: "/ja/submit", languages: { en: "/submit", ja: "/ja/submit" } },
 };
 

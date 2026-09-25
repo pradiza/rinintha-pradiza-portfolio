@@ -3,7 +3,7 @@ import { PageShell, ProjectCard, SiteFooter } from "../components";
 import { featuredProjectsJa } from "./site-data-ja";
 
 export const metadata: Metadata = {
-  title: "リニンタ　プラディザ — インドネシア×日本の戦略・プロジェクト支援",
+  title: "リニンザ　プラディザ — インドネシア×日本の戦略・プロジェクト支援",
   description: "リサーチ、クリエイティブ戦略、パートナーシップ、複雑な現場実装をつなぐ、インドネシア拠点のストラテジスト兼プロデューサー。",
   alternates: { canonical: "/ja", languages: { en: "/", ja: "/ja" } },
 };
@@ -26,7 +26,7 @@ export default function JapaneseHome() {
           </div>
           <div className="heroMobilePhoto" aria-hidden="true" />
           <figure className="heroPortrait">
-            <figcaption><strong>Rinintha Pradiza</strong><span>リニンタ　プラディザは、領域横断型のストラテジスト／プロデューサーであり、インドネシアと日本をつなぐ実務家です。15年以上にわたり、リサーチ、クリエイティブディレクション、パートナーシップを、複雑なプロジェクトの実行へとつないできました。</span></figcaption>
+            <figcaption><strong>Rinintha Pradiza</strong><span>リニンザ　プラディザは、領域横断型のストラテジスト／プロデューサーであり、インドネシアと日本をつなぐ実務家です。15年以上にわたり、リサーチ、クリエイティブディレクション、パートナーシップを、複雑なプロジェクトの実行へとつないできました。</span></figcaption>
           </figure>
         </div>
         <div className="marquee" aria-hidden="true"><span>リサーチ — 戦略 — ストーリーテリング — キャンペーン — 体験設計 — 文化翻訳 — リサーチ — 戦略 — ストーリーテリング — キャンペーン — 体験設計 — 文化翻訳 —</span></div>

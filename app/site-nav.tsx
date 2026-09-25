@@ -52,7 +52,7 @@ export function SiteNav({ locale = "en" }: Readonly<{ locale?: Locale }>) {
 
   return (
     <nav className="nav" aria-label={isJapanese ? "メインナビゲーション" : "Primary navigation"} data-menu-open={isOpen}>
-      <a className="brand" href={isJapanese ? "/ja" : "/"} aria-label={isJapanese ? "リニンタ　プラディザ、ホーム" : "Rinintha Pradiza, home"}>RP<span>.</span></a>
+      <a className="brand" href={isJapanese ? "/ja" : "/"} aria-label={isJapanese ? "リニンザ　プラディザ、ホーム" : "Rinintha Pradiza, home"}>RP<span>.</span></a>
       <div className="navLinks" id="primary-menu">
         {primaryLinks[locale].map((link) => <a key={link.href} href={link.href} onClick={() => setIsOpen(false)}>{link.label}</a>)}
         <a className="languageSwitch" href={alternateHref} hrefLang={isJapanese ? "en" : "ja"} lang={isJapanese ? "en" : "ja"} onClick={() => setIsOpen(false)}>{isJapanese ? "EN" : "日本語"}</a>

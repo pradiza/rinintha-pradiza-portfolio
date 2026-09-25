@@ -3,7 +3,7 @@ import { PageShell, SiteFooter } from "../../components";
 
 export const metadata: Metadata = {
   title: "PT Garda Citra Nusantara",
-  description: "リニンタ　プラディザが主導する、戦略、クリエイティブ、制作、インドネシアと日本を結ぶプロジェクトのためのインドネシア法人です。",
+  description: "リニンザ　プラディザが主導する、戦略、クリエイティブ、制作、インドネシアと日本を結ぶプロジェクトのためのインドネシア法人です。",
   alternates: { canonical: "/ja/company", languages: { en: "/company", ja: "/ja/company" } },
 };
 
@@ -50,11 +50,11 @@ export default function JapaneseCompanyPage() {
           <p className="sectionLabel">運営モデル</p>
           <div>
             <h2><span className="jaLine">一人のリード。</span><br /><span className="jaLine">最適なチーム。</span><br /><em><span className="jaLine">正式な実行体制。</span></em></h2>
-            <p className="sectionIntro">リニンタ　プラディザがすべての案件を直接リードします。PT Garda Citra Nusantaraは、契約、請求、ベンダー調整、より大規模な実施のための法人基盤を担います。</p>
+            <p className="sectionIntro">リニンザ　プラディザがすべての案件を直接リードします。PT Garda Citra Nusantaraは、契約、請求、ベンダー調整、より大規模な実施のための法人基盤を担います。</p>
           </div>
         </div>
         <div className="companyModelGrid">
-          <article><span>01 · リーダーシップ</span><h3>最初から最後まで、シニアが直接担当。</h3><p>初回の打ち合わせ後に引き継ぐのではなく、戦略から実施までリニンタが直接関わります。</p></article>
+          <article><span>01 · リーダーシップ</span><h3>最初から最後まで、シニアが直接担当。</h3><p>初回の打ち合わせ後に引き継ぐのではなく、戦略から実施までリニンザが直接関わります。</p></article>
           <article><span>02 · コラボレーション</span><h3>課題に合わせて、必要な専門性を編成。</h3><p>各プロジェクトの要件に応じて、専門家、制作パートナー、ベンダーと連携します。</p></article>
           <article><span>03 · ガバナンス</span><h3>明確な法人窓口。</h3><p>正式な案件は、インドネシア法人を通じて契約・請求することができます。</p></article>
         </div>

@@ -4,7 +4,7 @@ import { mediaArchiveJa, personalMediaJa, projectPressJa } from "../site-data-ja
 
 export const metadata: Metadata = {
   title: "メディア掲載",
-  description: "リニンタ　プラディザのインタビュー、登壇・出演、アーカイブ、学術資料、プロジェクトに関する第三者報道。",
+  description: "リニンザ　プラディザのインタビュー、登壇・出演、アーカイブ、学術資料、プロジェクトに関する第三者報道。",
   alternates: { canonical: "/ja/media", languages: { en: "/media", ja: "/ja/media" } },
 };
 
@@ -14,11 +14,11 @@ export default function JapaneseMediaPage() {
       <PageHero
         label="メディア掲載 / インタビュー · 出演 · 報道"
         title={<><span className="jaLine">インタビュー、</span><wbr /><span className="jaLine">出演、</span><br /><em><span className="jaLine jaLineMobileTight">第三者による記録。</span></em></>}
-        intro="インタビュー、登壇・出演、学術資料、アーカイブ、そして企画・実施に携わったプロジェクトの報道から、リニンタのキャリアをたどる公開記録です。"
+        intro="インタビュー、登壇・出演、学術資料、アーカイブ、そして企画・実施に携わったプロジェクトの報道から、リニンザのキャリアをたどる公開記録です。"
       />
 
       <section className="mediaSection" aria-labelledby="appearances-title-ja">
-        <div className="sectionHead"><p className="sectionLabel">出演・本人に関する掲載</p><div><h2 id="appearances-title-ja"><span className="jaLine">公の記録に見る、</span><br /><em><span className="jaLine">リニンタの仕事。</span></em></h2><p className="sectionIntro">リニンタ本人の仕事、視点、出演、専門的な貢献を直接記録した資料です。</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">出演・本人に関する掲載</p><div><h2 id="appearances-title-ja"><span className="jaLine">公の記録に見る、</span><br /><em><span className="jaLine">リニンザの仕事。</span></em></h2><p className="sectionIntro">リニンザ本人の仕事、視点、出演、専門的な貢献を直接記録した資料です。</p></div></div>
         <div className="mediaLinkGrid">{personalMediaJa.map((item) => <a key={item.href} className="mediaLinkCard" href={item.href} target="_blank" rel="noreferrer"><span>{item.source}</span><h3>{item.title}</h3><p>{item.note}</p><strong>元記事を見る ↗</strong></a>)}</div>
       </section>
 
@@ -28,7 +28,7 @@ export default function JapaneseMediaPage() {
       </section>
 
       <section className="pressSection" aria-labelledby="press-title-ja">
-        <div className="sectionHead"><p className="sectionLabel">プロジェクト報道</p><div><h2 id="press-title-ja"><span className="jaLine">主な実績を伝える、</span><br /><em><span className="jaLine">第三者の記事。</span></em></h2><p className="sectionIntro">リニンタが企画・実施に携わったプロジェクトについての、独立系メディアおよび機関による報道です。</p></div></div>
+        <div className="sectionHead"><p className="sectionLabel">プロジェクト報道</p><div><h2 id="press-title-ja"><span className="jaLine">主な実績を伝える、</span><br /><em><span className="jaLine">第三者の記事。</span></em></h2><p className="sectionIntro">リニンザが企画・実施に携わったプロジェクトについての、独立系メディアおよび機関による報道です。</p></div></div>
         <div className="pressList">{projectPressJa.map((item) => <a key={item.href} href={item.href} target="_blank" rel="noreferrer"><span>{item.source}</span><h3>{item.title}</h3><p>{item.note}</p><strong>読む ↗</strong></a>)}</div>
       </section>
 

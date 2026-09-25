@@ -7,7 +7,7 @@ import { timelineJa } from "../site-data-ja";
 
 export const metadata: Metadata = {
   title: "プロフィール",
-  description: "リニンタ　プラディザの経歴、キャリアタイムライン、専門性、プロジェクト現場をご紹介します。",
+  description: "リニンザ　プラディザの経歴、キャリアタイムライン、専門性、プロジェクト現場をご紹介します。",
   alternates: { canonical: "/ja/profile", languages: { en: "/profile", ja: "/ja/profile" } },
 };
 
@@ -30,11 +30,11 @@ function TimelineText({ item }: Readonly<{ item: TimelineItem }>) {
 export default function JapaneseProfilePage() {
   return (
     <PageShell locale="ja">
-      <PageHero label="プロフィール / リニンタについて" title={<><span className="jaLine">プロジェクトを</span><wbr /><span className="jaLine">動かす、</span><br /><em><span className="jaLine">その人について。</span></em></>} intro={<>ブランド、文化、エンターテインメント、体験が交差する領域で活動するストラテジスト兼プロデューサー。統合マーケティング、イベント、メディア、インドネシアと日本を結ぶプロジェクトに携わってきました。</>} />
+      <PageHero label="プロフィール / リニンザについて" title={<><span className="jaLine">プロジェクトを</span><wbr /><span className="jaLine">動かす、</span><br /><em><span className="jaLine">その人について。</span></em></>} intro={<>ブランド、文化、エンターテインメント、体験が交差する領域で活動するストラテジスト兼プロデューサー。統合マーケティング、イベント、メディア、インドネシアと日本を結ぶプロジェクトに携わってきました。</>} />
 
-      <section className="profileImageLead" aria-label="リニンタ　プラディザのポートレート">
-        <div className="profileMainImage"><Image src="/images/rinintha-profile.jpg" alt="日本の文化イベントに参加するリニンタ　プラディザ" width={1080} height={1080} sizes="(max-width: 820px) 100vw, 62vw" priority /></div>
-        <div className="profileImageCopy"><p className="sectionLabel">ストラテジスト · プロデューサー · 異文化プロジェクト実務者</p><p>一つの領域にとどまるよりも、領域が交わる場所にこそ、価値のある仕事があると考えています。</p><div className="profileSmallImage"><Image src="/images/rinintha-profile-bw.jpg" alt="リニンタ　プラディザのモノクロポートレート" width={960} height={960} sizes="(max-width: 820px) 100vw, 32vw" /></div></div>
+      <section className="profileImageLead" aria-label="リニンザ　プラディザのポートレート">
+        <div className="profileMainImage"><Image src="/images/rinintha-profile.jpg" alt="日本の文化イベントに参加するリニンザ　プラディザ" width={1080} height={1080} sizes="(max-width: 820px) 100vw, 62vw" priority /></div>
+        <div className="profileImageCopy"><p className="sectionLabel">ストラテジスト · プロデューサー · 異文化プロジェクト実務者</p><p>一つの領域にとどまるよりも、領域が交わる場所にこそ、価値のある仕事があると考えています。</p><div className="profileSmallImage"><Image src="/images/rinintha-profile-bw.jpg" alt="リニンザ　プラディザのモノクロポートレート" width={960} height={960} sizes="(max-width: 820px) 100vw, 32vw" /></div></div>
       </section>
 
       <section className="profileStatement">
