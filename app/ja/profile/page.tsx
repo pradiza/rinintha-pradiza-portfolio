@@ -46,6 +46,7 @@ export default function JapaneseProfilePage() {
             <p>その後、国際協力、テレビ、アイドル運営、メディア、フェスティバル、ブランドエンターテインメント、ファッション、ホスピタリティ、リサーチ、PR、小売へと領域を広げました。提案書、制作現場、メディアルーム、ステージ、国際商談を横断してきた経験があります。</p>
             <p>インドネシア語と英語を流暢に話し、日本語は日常会話レベルです。日本のアイデア、ブランド、エンターテインメントIPが、本来の個性を失わずにインドネシアで伝わる形へ整えることを得意としています。</p>
           </div>
+          <p className="sectionIntro">2026年は、歌唱コンテスト<strong>「Manekineko Voice 2026」</strong>の審査員として、音楽や才能の評価にも携わります。 <a className="textLink" href="/ja/media#manekineko-voice-2026">審査員発表を見る ↗</a></p>
         </div>
       </section>
 

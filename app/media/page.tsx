@@ -17,6 +17,16 @@ export default function MediaPage() {
         intro="A selected public record of Rinintha’s career: interviews, speaking appearances, academic references, archival credits, and press coverage connected to projects she helped shape and deliver."
       />
 
+      <section className="mediaSection" id="manekineko-voice-2026" aria-labelledby="judging-title">
+        <div className="sectionHead"><p className="sectionLabel">Judging · 2026</p><div>
+          <h2 id="judging-title">Manekineko Voice <em>2026.</em></h2>
+          <p className="sectionIntro">Rinintha joins the judging panel for Manekineko Voice 2026, a singing competition presented by Karaoke Manekineko Indonesia, with an international Grand Final in Malaysia.</p>
+          <p>The organizer announced the judging panel on 25 November 2026.</p>
+          <p><a className="textLink" href="https://www.instagram.com/p/DgKex3uBDVG/" target="_blank" rel="noreferrer">Meet the judges ↗</a></p>
+          <p><a className="textLink" href="https://www.instagram.com/p/DfCYrHHEjWj/" target="_blank" rel="noreferrer">Competition announcement ↗</a></p>
+        </div></div>
+      </section>
+
       <section className="mediaSection" aria-labelledby="appearances-title">
         <div className="sectionHead"><p className="sectionLabel">Appearances &amp; mentions</p><div><h2 id="appearances-title">Rinintha in the<br /><em>public conversation.</em></h2><p className="sectionIntro">Sources that directly document Rinintha’s work, perspective, appearances, or professional contribution.</p></div></div>
         <div className="mediaLinkGrid">{personalMedia.map((item) => <a key={item.href} className="mediaLinkCard" href={item.href} target="_blank" rel="noreferrer"><span>{item.source}</span><h3>{item.title}</h3><p>{item.note}</p><strong>Open source ↗</strong></a>)}</div>

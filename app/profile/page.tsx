@@ -52,6 +52,7 @@ export default function ProfilePage() {
             <p>Since then, I have worked across international cooperation, television, idol management, media, festivals, branded entertainment, fashion, hospitality, research, PR, and retail. I move comfortably between a proposal deck, a production floor, a media room, a stage, and a cross-border business meeting.</p>
             <p>I&apos;m fluent in Indonesian and English, conversational in Japanese, and especially experienced at helping Japanese ideas, brands, and entertainment properties make sense in Indonesia without losing what makes them distinctive.</p>
           </div>
+          <p className="sectionIntro">In 2026, I join the judging panel for <strong>Manekineko Voice 2026</strong>, continuing my involvement in music and talent evaluation. <a className="textLink" href="/media#manekineko-voice-2026">Judging announcement ↗</a></p>
         </div>
       </section>
 
